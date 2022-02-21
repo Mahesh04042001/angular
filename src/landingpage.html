@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <style>
+        body {
+            margin: 40px;
+            border: 2px solid black;
+        }
+        ul {
+            float: right;
+        }
+
+        .lis{
+            justify-content: space-between;
+            display: inline-block;
+            list-style-type: none;
+            padding: 5px;
+            color: blue;
+            text-transform: uppercase;
+            font-size: larger;
+            cursor: pointer;
+        }
+
+        #form {
+
+            border-radius: 1px;
+            background-color: #f2f2f2;
+            padding: 5px;
+            text-align: justify;
+            display: inline-table;
+        }
+    </style>
+</head>
+<body>
+
+    <nav style="background-color:whitesmoke">
+        <div id="home">
+            <img src="https://freepikpsd.com/file/2019/10/sample-logo-png-transparent-background-5-3-Transparent-Images.png" alt="Logo" width="150" id="logo">
+            <ul>
+                <li style="color: red;" class="lis">
+                    <marquee> Welcome To My Sample Landing Web Page</marquee>
+                </li>
+                <li class="lis" ><a href="#home">home</a></li>
+
+                <li class="lis"><a href="#about">About Us</a></li>
+                <li class="lis" ><a href="#products">Products</a></li>
+                <li class="lis"><a href="#contact">Contact Us</a></li>
+                <li class="lis"><a href="">feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <img src="https://www.urdesignmag.com/wp-content/uploads/2020/03/air-conditioning-brands-choosing-the-best-one-for-your-bradenton-home-1.jpg" alt="Airconditionar_Picture" width="1265" height="500">
+    </div>
+    <section>
+        <div style="background-color: lightgrey; font-size:larger;">
+            <h1 style="text-align: center; color: brown;" id="about"><a href="#home">About Us</a></h1>
+            <p style="text-align: justify;">Hi welcome you, we are now in training at chainsys india private limited.
+                our training guide is Mr.venkatakrihnan bindusaran.
+                In the training period our giude asked to us and give an assignment.
+                that assignment was to create a sample landing product web page with in a due time was sunday 10.AM.
+                so that's why, I prepared this sample landing product web page and also this is my first landing web page.
+
+            </p>
+        </div>
+        <div style="text-align: center;font-size:larger; background-color:darkgrey;">
+            <h1 id="products" style="color: darkolivegreen;"><a href="#home">Products</a></h1>
+            <lable for="brand"><b>Select your Dream air conditionar brand here:</b></lable>
+            <select name="brand" id="brand">
+                <option value=""><a href="https://www.tatamotors.com/products/">Samsung</a></option>
+                <option value="saab"><a>LG</a></option>
+                <option value="saab"><a>Voltas</a></option>
+                <option value="opel"><a>hyundai</a></option>
+                <option value="audi"><a>Sony</a></option>
+            </select>
+            <input type=button value="Go" onclick="" />
+            <h3>Brand Story</h3>
+            <p>We treat your home like you treat your home. 
+                We'll get your air flowing fresh. We'll keep you cool when it's hot. 
+                We'll keep you in your comfort zone.</p>
+            <div>
+                 <img src="https://i0.wp.com/www.techarp.com/wp-content/uploads/2016/03/AR24JV5NBWKNNA-247544-0.jpg"
+                 alt="samsong_triangle_ac" height="400" width="500">
+                <ul style="text-align: left;">
+                    <h3>Details:</h3>
+                    <li><b>Brand</b>:	Samsung</li>
+                    <li><b>Special Feature</b>: inverter</li>
+                    <li><b>Color</b>: White</li>
+                    <li><b>Item Dimentions</b>: 26.1 x 82.6 x 26.1 Centimeters</li>
+                    <li><b>Core Material</b>: Aluminium</li>
+                    <li><b>Capacity</b>: 1 Ton</li>
+                    <li><b>Price</b>: ₹ 35,000</li>
+                    <button style="background-color: blue; color: white;">Buy</button>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; background-color: grey; font-size:larger;">
+            <h1 id="contact" style="color: slategray;"><a href="#home">Contact Us :</a></h1>
+            <div>
+                <h3>For Commercial Vehicles</h3>
+                <p style="text-align: center;">Email Id - maheswaran.selvakumar@chainsys.com |
+                    Toll Free Number -(+91)9788142553
+                </p>
+
+            </div>
+        </div>
+        <div style="text-align: center; background-color:grey; font-size:larger;">
+            <h2>Feedback Form</h2>
+            <form id="form">
+                <h3>Personal Details:</h3>
+                <div>
+                    <lable for="fname">First Name:</lable>
+                    <input type="text" name="fname" placeholder="Enter the First name" autofocus><br><br>
+                    <lable for="lname">Last Name:</lable>
+                    <input type="text" name="lname" placeholder="Enter the Last name(optional)"><br><br>
+                    <lable for="mobno">Mobile Number:</lable>
+                    <input type="number" name="mobno" placeholder="Enter your mobile number"><br><br>
+                    <lable for="mail">Email Id:</lable>
+                    <input type="email" name="mail" placeholder="Enter your mail id(optional)"><br><br>
+
+                </div>
+                <div>
+                    What is your gender?<br>
+                    <label for="gender" placeholder="enter gender">select gender here:</label>
+                    <select name="gender" id="gender">
+                        <option value="Male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="trans">Transgender</option>
+                    </select><br><br>
+                    Do you like our web page?<br>
+                    <input type="checkbox" id="yes" name="yes" value="service">
+                    <label for="yes">YES</label><br>
+                    <input type="checkbox" id="no" name="no" value="service">
+                    <label for="no">NO</label><br><br>
+                    <label>Comments:</label><br>
+                    <textarea id="comment" title="enter your comment here" col="50" row="5">comments</textarea>
+                </div>
+                <div>
+                    <br>
+                    <input type="submit" value="Done">
+                </div>
+            </form>
+        </div>
+    </section><br><br>
+    <footer>
+        <div style="background-color: darkmagenta;color: black; padding: 10px; font-size:larger;">
+            <p style="text-align: center;">© Copyright 2022 MAHESWARAN. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+</body>
+</html>

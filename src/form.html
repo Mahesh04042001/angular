@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header><h1> Form sample </h1></header>
+    <form>
+        <div>
+            <lable>Message</lable>
+            <input title="entre a message" id="msg">
+            <button type="submit" class="btn">Create</button>
+        </div>
+        <div>
+            Base64 encoded text:
+            <lable id="msg1"></lable>
+        </div>
+    </form>
+    <script>
+        document.querySelector('form').addEventListener( 'submit', event => 
+			{
+				event.preventDefault();
+				const input = document.querySelector('#msg');
+				const encrypted = btoa(input.value);
+				const node_lable = document.querySelector('#msg1');
+				node_lable.innerHTML = encrypted;	
+                console.log(atob(document.querySelector('#msg1').innerHTML));			
+
+			} ) ;
+    </script>
+</body>
+</html>
