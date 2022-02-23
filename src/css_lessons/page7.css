@@ -9,16 +9,16 @@ h3{
 h1,h3{
     color: white;
 }
-/* ul li{
+ul li{
     color: red;
-} */
+}
 /*selecting parent child*/
 ul>li{
     color: blue;
 }
-/* li{
+li{
     color: green;
-} */
+}
 /*selecting class element*/
 .item{
     color: pink;
