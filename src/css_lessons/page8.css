@@ -1,0 +1,19 @@
+section p{
+
+    color: red;
+}
+section>p{
+    color: orange;
+}
+/*immediate child*/
+h1 + p{
+    color: blue;
+    background-color: antiquewhite;
+}
+/*applied for all sibilings after the specified element*/
+h1 ~ p{
+    background-color: antiquewhite;
+}
+h1>p{
+    background-color: antiquewhite;
+}
