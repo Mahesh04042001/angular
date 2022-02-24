@@ -1,0 +1,150 @@
+:root{
+    --main-font:"Red Hat Display",sans-serif;
+    --backround-color: hsl(217, 54%, 11%);
+    --container-box-shadow:24px 24px 200px -15px hsl(216, 50%, 16%);
+    --dark-blue:hsl(223,47%,23%);
+    --desaturated-blue:hsl(216, 50%, 16%);
+    --very-pale-blue:hsl(225, 100%, 98%);
+    --bright-blue:hsl(245,75%,52%);
+    --pale-blue:hsl(225, 100%, 94%);
+    /* Soft blue: 
+- Cyan: 
+
+### Neutral
+
+- Very dark blue (main BG): 
+- Very dark blue (card BG): 
+- Very dark blue (line): 
+- White: */
+    
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x:hidden;
+}
+
+body{
+    height: 120vh;
+    background-color:var(--backround-color);
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow-y: scroll;
+}
+.preview-container{
+    position:relative;
+    width: 400px;
+    max-width: 28.3rem;
+    height: 100vh;
+    max-height: 44rem;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--desaturated-blue);
+    border-radius:25px ;
+    text-align: center;
+    overflow: hidden;
+    -webkit-box-shadow: var(--container-box-shadow);
+    -moz-box-shadow: var(--container-box-shadow);
+    box-shadow: var(--container-box-shadow);
+    padding: 30px;
+}
+.img0{
+    
+    height: 300px;
+    min-height: 14rem;
+    background-image: url("../../practice/nft-preview-card-component-main/nft-preview-card-component-main/images/image-equilibrium.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+#h2{
+    text-align: left;    
+    margin-bottom: 20px;
+    font-size: xx-large;
+    
+}
+p{
+    text-align: left;
+    font-size: larger;
+    padding-right: 20px;
+    
+    color:  hsl(0, 0%, 100%);
+    
+}
+.img1{
+    background-image: url(../../practice/nft-preview-card-component-main/nft-preview-card-component-main/images/icon-ethereum.svg);
+    width: 3rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    float: left;
+    padding-top: 20px;
+
+}
+.number{
+    font-size: x-large;
+    padding-top: 10px;
+    float: left;
+    padding-right: 30px;
+    margin: -5px;
+    color: hsl(178, 100%, 50%);
+
+}
+.img2{
+    background-image: url(../../practice/nft-preview-card-component-main/nft-preview-card-component-main/images/icon-clock.svg);
+    width: 3rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    float: left;
+    padding-top: 20px;
+    
+}
+.day{
+    font-size: x-large;
+    padding-top: 10px;
+    float: left;
+    margin: -7px;
+    color: hsl(223,47%,23%);
+    
+}
+.total{
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+.border{
+    border-bottom: solid 2px hsl(215, 32%, 27%);
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.img3{
+    background-image: url(../../practice/nft-preview-card-component-main/nft-preview-card-component-main/images/image-avatar.png);
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    float: left;
+    padding-top: 20px;
+
+}
+ 
+.remain{
+    font-size: x-large;
+    padding-top: 10px;
+    color:hsl(0, 0%, 100%);
+}
+.remain span{
+    color: hsl(223,47%,23%);
+}
