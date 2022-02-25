@@ -3,7 +3,7 @@
     display: flex;
     width: 900px;
     height: 800px;
-    border: solid 2px red;
+    /* border: solid 2px red; */
     flex-wrap: wrap;
     padding: 20px;
 }
@@ -19,7 +19,7 @@
     /* margin: 10px; */
     width: 1450px;
     align-items:baseline;
-    border: solid 2px black;
+    /* border: solid 2px black; */
     display: flex;
     /* padding: 40px; */
     padding-left: 0;
@@ -39,6 +39,7 @@
     background-color: hsl(263, 55%, 52%);
     background-image: url(../../practice/testimonials-grid-section-main/testimonials-grid-section-main/images/bg-pattern-quotation.svg);
     /* display: inline-flex; */
+    background-position:right top;
     /* flex-direction: row; */
     align-content: space-between;
     /* align-items: center; */
@@ -85,11 +86,14 @@
     border: solid 2px black;
     border-radius: 10px;
     padding: 10px;
+    background-color: hsl(0, 0%, 100%);
 
 }
 .container q{
     /* font-size: small; */
     padding-top: 5px;
+    color: hsl(0, 0%, 81%);
+
 }
 .img1{
     width: 3rem;
