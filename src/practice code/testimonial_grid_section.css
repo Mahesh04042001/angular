@@ -1,4 +1,10 @@
 
+.body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .container1{
     display: flex;
     width: 900px;
@@ -17,7 +23,7 @@
 }
 .container{
     /* margin: 10px; */
-    width: 1450px;
+    width: 1440px;
     align-items:baseline;
     /* border: solid 2px black; */
     display: flex;
