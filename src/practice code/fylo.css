@@ -1,0 +1,35 @@
+.section_part{
+    display: flex;
+    background-color: hsl(229, 57%, 11%);
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.file_folder_upload{
+    display: flex;
+}
+.logo{
+    width: 4rem;
+    height: 5rem;
+    background-image: url(../../practice/fylo-data-storage-component-master/fylo-data-storage-component-master/images/logo.svg);
+    background-repeat: no-repeat;
+}
+.file{
+    width: 2rem;
+    height: 3rem;
+    background-image: url(../../practice/fylo-data-storage-component-master/fylo-data-storage-component-master/images/icon-document.svg);
+    background-repeat: no-repeat;
+}
+.folder{
+    width: 2rem;
+    height: 3rem;
+    background-image: url(../../practice/fylo-data-storage-component-master/fylo-data-storage-component-master/images/icon-folder.svg);
+    background-repeat: no-repeat;
+}
+.upload{
+    width: 2rem;
+    height: 3rem;
+    background-image: url(../../practice/fylo-data-storage-component-master/fylo-data-storage-component-master/images/icon-upload.svg);
+    background-repeat: no-repeat;
+}
