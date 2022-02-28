@@ -7,6 +7,7 @@ body{
     background-image: url(https://cdn.pixabay.com/photo/2018/01/17/18/43/book-3088775_960_720.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 
 }
 .flex{
