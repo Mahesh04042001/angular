@@ -1,0 +1,103 @@
+body{
+    background-image: url(../../practice/profile-card-component-main/images/bg-pattern-top.svg);
+    background-color: hsl(185, 75%, 39%);
+    background-repeat: no-repeat;
+}
+.container{
+    position:relative;
+    width: 90%;
+    max-width: 28.3rem;
+    height: 85vh;
+    max-height: 44rem;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    border-radius:25px ;
+    text-align: center;
+    overflow: hidden;
+    
+}
+.header-image{
+    width: 100%;
+    height: 100%;
+    min-height: 14rem;
+    background-image: url("../../practice/profile-card-component-main/images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 25px 25px 0 0;
+    overflow: hidden;
+}
+.photo{
+    width: 7rem;
+    height: 7rem;
+    background-image: url(../../practice/profile-card-component-main/images/image-victor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 170px;
+    margin-top: -50px;
+    border-radius: 55px;
+}
+.name,.foot p{
+    color: hsl(229, 23%, 23%);
+}
+.foo{
+    font-size: x-large;
+}
+span{
+    margin-left: 10px;
+}
+.ul1 li{  
+    display: inline;
+    text-decoration: none;
+    /* padding-top: 60px;
+    padding-right: 60px;
+    padding-left: 0px;
+    margin-left: 5px; */
+    font-size: large;
+
+}
+ul li{  
+    display: inline;
+    text-decoration: none;
+    /* padding-top: 60px;
+    padding-right: 50px;
+    padding-left: 0px;
+    margin-left: 5px; */
+    font-size: xx-small;
+    text-transform: uppercase;
+    color:  hsla(0, 0%, 100%, 0.75);
+}
+.foot{
+    background-color: var(--very-pale-blue);
+    font-family: var(--main-font);
+    width: 85%;
+    display: inline-flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 900;
+    gap: 1rem;
+}
+hr{
+    margin-top: 30px;
+}
+.follow{
+    padding-right: 90px;
+}
+.likes{
+    padding-right: 90px;
+}
+span,h2,#fo,#po,#li{
+    color: hsl(0, 0%, 59%);
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
