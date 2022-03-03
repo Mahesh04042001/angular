@@ -27,14 +27,14 @@ section {
   padding: 40px;
   padding-left: 70px;
   padding-right: 80px;
-  background-image: url(../../../../../js-basic-lesson/practice/base-apparel-coming-soon-master/images/bg-pattern-desktop.svg);
+  background-image: url(../../practice/base-apparel-coming-soon-master/images/bg-pattern-desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .image {
   width: 40%;
   height: 100%;
-  background-image: url(../../../../../js-basic-lesson/practice/base-apparel-coming-soon-master/images/hero-desktop.jpg);
+  background-image: url(../../practice/base-apparel-coming-soon-master/images/hero-desktop.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -42,7 +42,7 @@ section {
 .logo {
   width: 8rem;
   height: 1.7rem;
-  background-image: url(../../../../../js-basic-lesson/practice/base-apparel-coming-soon-master/images/logo.svg);
+  background-image: url(../../practice/base-apparel-coming-soon-master/images/logo.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -75,7 +75,7 @@ section {
 button {
   width: 3.5rem;
   height: 2.2rem;
-  background-image: url(../../../../../js-basic-lesson/practice/base-apparel-coming-soon-master/images/icon-arrow.svg);
+  background-image: url(../../practice/base-apparel-coming-soon-master/images/icon-arrow.svg);
   background-repeat: no-repeat;
   background-color: hsl(0, 36%, 70%);
   border-radius: 15px;
