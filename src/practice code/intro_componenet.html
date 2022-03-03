@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="intro_component.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Josefin+Sans:wght@300;400;600&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="left">
+        <div class="heading">
+          <h1>
+            Learn to code by watching others
+
+          </h1>
+        </div>
+        <div class="para">
+          <p>
+            See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+            but understanding how developers think is invaluable.
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="right-top">
+          <p>
+            <span>Try it free 7 days</span> then $20/mo. thereafter
+
+          </p>
+        </div>
+        <div class="right-bottom">
+          <div class="form1">
+            <form action="pageh.html" name="myForm">
+              <div class="form2"><input placeholder="    First Name" name="name" type="text" size="30" required></div>
+
+              <div class="form2"><input placeholder="    Last Name" name="name" type="text" size="30" required></div>
+              <div class="form2"><input placeholder="    Email Address" name="email" type="email" size="30"></div>
+              <div class="form2"><input placeholder="    Password" type="password" id="psw" name="psw"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title=" Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                  required></div>
+
+
+
+              <div><input class="form2 claim" type="submit" value="CLAIM YOUR FREE TRAIL !"
+                  onclick="ValidateEmail(document.myForm.email); return false;"></div>
+
+
+            </form>
+
+          </div>
+          <div class="content">
+            <p>
+              By clicking the button, you are agreeing to our <span id="term">Terms and Services</span>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    function ValidateEmail(input) {
+
+      var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+      if (input.value.match(validRegex)) {
+
+        // alert("Valid email address!");
+
+        // document.myForm.email.focus();
+
+        // return true;
+
+      } else {
+
+        alert("Invalid email address!");
+
+        document.myForm.email.focus();
+
+        return false;
+
+      }
+
+    }
+  </script>
+  <!-- 
+
+   
+
+
+  First Name 
+  Last Name 
+  Email Address
+  
+
+  Claim your free trial 
+
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+</body>
+
+</html>

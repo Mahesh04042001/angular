@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  height: 500px;
+  background-image: url(../../practice/intro-component-with-signup-form-master/images/bg-intro-desktop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: hsl(0, 100%, 74%);
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 400px;
+  margin-left: 60px;
+  margin-top: 40px;
+  justify-content: center;
+}
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-size: x-large;
+  width: 400px;
+  height: 100px;
+  color: white;
+}
+.para {
+  font-family: "Bai Jamjuree", sans-serif;
+  width: 400px;
+  margin-top: 20px;
+  color: white;
+}
+.right {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: center;
+}
+.right-top {
+  background-color: hsl(248, 32%, 49%);
+  color: hsl(246, 25%, 77%);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+}
+.right-top span {
+  color: white;
+}
+.right-bottom {
+  background-color: white;
+  width: 400px;
+  height: 350px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.from1 {
+  display: flex;
+  justify-content: center;
+}
+form {
+  margin-left: 40px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form2 {
+  margin-bottom: 30px;
+}
+.content {
+  margin-left: 50px;
+  font-size: x-small;
+  color: hsl(246, 25%, 77%);
+}
+input {
+  padding: 5px;
+  width: 300px;
+  border-radius: 5px;
+  border: 0.5px hsl(246, 25%, 77%) solid;
+}
+.claim {
+  padding: 10px;
+  font-size: 15px;
+  background-color: hsl(154, 59%, 51%);
+  border-style: none;
+}
+#term {
+  color: hsl(0, 100%, 74%);
+  font-family: "Josefin Sans", sans-serif;
+}
+.right-top:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 30px hsl(248, 32%, 49%);
+}
+input:hover {
+  box-shadow: 5px 5px 30px hsl(246, 25%, 77%);
+}
