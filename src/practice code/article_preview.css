@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(210, 46%, 95%);
+}
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+section {
+  width: 1000px;
+  height: 350px;
+  border: solid 1px black;
+  display: flex;
+}
+.right {
+  padding: 40px;
+  padding-right: 50px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: space-between;
+}
+.image {
+  width: 100%;
+  height: 350px;
+  background-image: url(../../practice/article-preview-component-master/images/drawers.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.heading {
+  color: hsl(217, 19%, 35%);
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: bolder;
+  font-size: large;
+}
+.para {
+  color: hsl(212, 23%, 69%);
+  font-family: "Libre Franklin", sans-serif;
+  line-height: 20px;
+}
+.foot {
+  display: flex;
+  justify-content: space-between;
+}
+.foot-content {
+  display: flex;
+}
+.img {
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../../practice/article-preview-component-master/images/avatar-michelle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+.content {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.date {
+  color: hsl(212, 23%, 69%);
+}
+.name {
+  color: hsl(217, 19%, 35%);
+}
+.share {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#popup {
+  padding-top: 5px;
+  display: flex;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  border: 2px solid red;
+  justify-content: center;
+  justify-content: space-evenly;
+  position: relative;
+  background-color: hsl(214, 17%, 51%);
+  display: none;
+}
+.share1 {
+  font-size: larger;
+  color: white;
+}
+
+.fb {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(../../practice/article-preview-component-master/images/icon-facebook.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tw {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(../../practice/article-preview-component-master/images/icon-twitter.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pin {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(../../practice/article-preview-component-master/images/icon-pinterest.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  float: right;
+}
+#shr {
+  width: 2rem;
+  height: 2rem;
+  background-image: url(https://cdn0.iconfinder.com/data/icons/social-15/200/share-icon-512.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+button {
+  border-style: none;
+  background-color: white;
+}
+button:hover {
+  cursor: pointer;
+}
