@@ -4,7 +4,11 @@
   box-sizing: border-box;
 }
 body {
-  background-color: hsl(240, 73%, 65%);
+  background-image: linear-gradient(
+    to left,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
 }
 main {
   display: flex;
@@ -57,7 +61,7 @@ section {
   padding-left: 100px;
   height: 400px;
   font-weight: bold;
-  color: hsl(240, 6%, 50%);
+  color: hsl(237, 12%, 33%);
 }
 .heading {
   font-size: xx-large;
@@ -93,6 +97,8 @@ hr {
   width: 300px;
   height: 1-0px;
   display: none;
+  color: hsl(240, 6%, 50%);
+  margin-top: 20px;
 }
 button {
   border-style: none;
