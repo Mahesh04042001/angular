@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+main {
+  max-height: 648px;
+
+  display: flex;
+  flex-direction: column;
+}
+.curvy {
+  width: 1000px;
+  height: 400px;
+  border-bottom-left-radius: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: -50px;
+  margin-left: 500px;
+  margin-right: -400px;
+  background-color: hsl(207, 33%, 95%);
+  opacity: 0.5;
+}
+.logo {
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../../practice/project-tracking-intro-component-master/images/logo.svg);
+  background-repeat: no-repeat;
+  margin-left: 80px;
+}
+.header {
+  width: 1200px;
+  height: 20px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: visible;
+}
+.menu {
+  width: 600px;
+  margin-left: 700px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  justify-content: space-evenly;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  color: hsl(230, 29%, 20%);
+}
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 80px;
+  margin-top: 150px;
+  scroll-behavior: unset;
+}
+#row {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+#p {
+  letter-spacing: 3px;
+  padding: 5px 3px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  color: hsl(230, 11%, 40%);
+  font-family: "Barlow Condensed", sans-serif;
+}
+#heading {
+  width: 400px;
+  margin-top: 30px;
+  font-size: xx-large;
+  text-transform: uppercase;
+  color: hsl(230, 29%, 20%);
+  font-family: "Barlow Condensed", sans-serif;
+}
+#para {
+  width: 280px;
+  margin-top: 30px;
+  font-size: larger;
+  color: hsl(230, 11%, 40%);
+  font-family: "Barlow", sans-serif;
+}
+.image {
+  margin-right: -150px;
+  width: 800px;
+  height: 800px;
+  background-image: url(../../practice/project-tracking-intro-component-master/images/illustration-devices.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.9;
+}
+#new {
+  background-color: hsl(230, 29%, 20%);
+  color: white;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  margin-left: -90px;
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.foot {
+  margin-top: -300px;
+  margin-left: 60px;
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  margin-bottom: 90px;
+  color: hsl(230, 11%, 40%);
+  font-family: "Barlow", sans-serif;
+}
+.border {
+  padding: 20px;
+  margin-right: 10px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.border:hover,
+#login:hover,
+#price:hover,
+#feature:hover,
+#product:hover {
+  color: white;
+  background-color: hsl(0, 100%, 68%);
+}
