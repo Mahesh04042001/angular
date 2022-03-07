@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../angular/images/flower-background-floral-border.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.table1 caption {
+  font-size: x-large;
+}
+.table1 th {
+  font-size: larger;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+tbody {
+  display: flex;
+  justify-content: center;
+}

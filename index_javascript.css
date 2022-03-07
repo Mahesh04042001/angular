@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../angular/images/Free-Wallpaper-HD-Background-Download.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+caption {
+  width: 300px;
+}
+tbody {
+  display: flex;
+  justify-content: center;
+}
+.table3 caption {
+  font-size: x-large;
+}
+.table3 th {
+  font-size: larger;
+}
+ol {
+  margin-top: 30px;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

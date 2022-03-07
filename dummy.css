@@ -45,3 +45,7 @@ a {
 #link:hover {
   border: 1px solid blue;
 }
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
