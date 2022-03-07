@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 1;
+}
+section {
+  width: 1400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+li {
+  padding-top: 10px;
+}
+th {
+  padding-top: 10px;
+}
+caption {
+  padding-top: 20px;
+}
+.table2 .table3 {
+  padding-left: 40px;
+}
+a {
+}
