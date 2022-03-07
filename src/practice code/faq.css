@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(240, 73%, 65%);
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+section {
+  margin-top: 150px;
+  width: 800px;
+  height: 400px;
+  display: flex;
+  border-radius: 20px;
+  background-color: white;
+}
+.image {
+  width: 600px;
+  height: 700px;
+  background-image: url(../../practice/faq-accordion-card-main/images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-left: -290px;
+  margin-top: -200px;
+}
+.img-lady {
+  margin-top: 250px;
+  margin-left: 250px;
+  width: 350px;
+  height: 300px;
+  background-image: url(../../practice/faq-accordion-card-main/images/illustration-woman-online-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.img-box {
+  margin-top: -230px;
+  margin-left: 218px;
+
+  width: 150px;
+  height: 200px;
+  background-image: url(../../practice/faq-accordion-card-main/images/illustration-box-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.content {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+  padding-left: 100px;
+  height: 400px;
+  font-weight: bold;
+  color: hsl(240, 6%, 50%);
+}
+.heading {
+  font-size: xx-large;
+  margin-bottom: 20px;
+  color: hsl(238, 29%, 16%);
+  font-weight: bolder;
+}
+.align {
+  display: flex;
+  justify-content: space-between;
+}
+#arrow1,
+#arrow2,
+#arrow3,
+#arrow4,
+#arrow5 {
+  width: 1rem;
+  height: 1rem;
+  background-image: url(../../practice/faq-accordion-card-main/images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#div1,
+#div2,
+#div3,
+#div4,
+#div5 {
+  display: flex;
+  width: 300px;
+  height: 1-0px;
+  display: none;
+}
+button {
+  border-style: none;
+  background-color: white;
+}
