@@ -21,6 +21,7 @@ section {
   display: flex;
   border-radius: 20px;
   background-color: white;
+  overflow: hidden;
 }
 .image {
   width: 600px;
@@ -43,15 +44,15 @@ section {
   background-position: center;
 }
 .img-box {
-  margin-top: -230px;
-  margin-left: 218px;
-
+  margin-top: 300px;
+  margin-right: -80px;
   width: 150px;
   height: 200px;
   background-image: url(../../practice/faq-accordion-card-main/images/illustration-box-desktop.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  opacity: 0.9;
 }
 .content {
   width: 600px;
