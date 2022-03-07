@@ -8,40 +8,32 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  display: flex;
-  justify-content: flex-end;
 }
 .flex {
-  width: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: flex-end;
   color: black;
+  font-size: x-large;
   text-decoration: none;
-  padding-top: 50px;
 }
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.flex table a {
+  text-decoration: none;
 }
-.lesson,
-.challenge {
-  padding: 30px 30px;
+a:link {
+  color: blue;
 }
-ol {
-  padding-top: 20px;
+a:visited {
+  color: brown;
+}
+a:hover {
+  cursor: pointer;
+  color: red;
 }
 
-ol li {
-  padding: 10px;
-}
-a {
-  text-decoration: none;
-  color: maroon;
-  font-size: large;
-}
-#link:hover {
-  border: 1px solid blue;
+.table {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 400px;
 }
