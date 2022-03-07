@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv">Hello!</div>
+    <div id="myDiv" style="display: none;">this element is not displayed on the page</div>
+    <a href="javascript:hide('myDiv');">hide it!</a>
+    <p><a href="javascript:show('myDiv');">show it!</a></p>
+    <p><button onclick="hide('myDiv')">hide me</button></p>
+    <p><button onclick="show('myDiv')">show me</button></p>
+
+    <script type="text/javascript" language="javascript">
+        console.log(myDiv.innerText);
+        myElement=document.getElementById('myDiv');
+        console.log(myElement.innerText);
+        console.log(myElement.innerHTML);
+    </script>
+    <script>
+        function hide(elementID) {
+            var myElement=document.getElementById(elementID);
+            if(myElement) myElement.style.display='none';
+        }
+        function show(elementID) {
+            var myElement=document.getElementById(elementID);
+            if(myElement) myElement.style.display='block';
+        }
+    </script>
+</body>
+</html>

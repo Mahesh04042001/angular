@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="pageh.html" name="myForm">
+        <p>Name:<input placeholder="enter name" name="name" type="text" size="30">
+        </p>
+        <p>Email:<input placeholder="enter email address" name="email" type="email" size="30">
+        </p>
+        <p>Age:<input placeholder="enter age" name="age" type="text" size="3">
+        </p>
+        <p>job: <select name="job" title="joblist">
+                <option> ---select one--</option>
+                <option value="student"> student</option>
+                <option value="businessperson"> businessperson</option>
+
+            </select>
+        <p><input type="submit" value="Send!" onclick="checkForm(); return false;"></p>
+        <p><button type="button" value="Send!" onclick="openWindow()">B1</button></p>
+
+        </p>
+    </form>
+    <script type="text/javascript">
+        function checkForm() {
+            var formName = document.myForm.name;
+            var formEmail = document.myForm.email;
+            var formAge = document.myForm.age;
+            var formJob = document.myForm.job;
+            if (formName.value.indexOf(" ") == -1) {
+                alert("please enter your full name.");
+                formName.focus();
+                return;
+            }
+            if (formEmail.value.indexOf("@") == -1 || formEmail.value.indexOf(".") == -1) {
+                alert("please enter  a valid e-mail address.");
+                formEmail.focus();
+                return;
+            }
+            let formAgeValue = parseInt(formAge.value);
+            if (!(formAgeValue > 0)) {
+                alert("please enter your age as a valid number.");
+                formAge.focus();
+                return;
+            }
+            else if (formAgeValue < 8 || formAgeValue > 58) {
+                alert("Age must be between 8 and 58.");
+                formAge.focus();
+                return;
+            }
+            if (formJob.selectedIndex == 0) {
+                alert("please select your job from list");
+                formJob.focus();
+                return;
+            }
+            document.myForm.submit();
+
+
+
+        }
+        function openWindow() {
+            myWindow = window.open("pageh.html", "page2", "height=300,width=400");
+
+        }
+    </script>
+</body>
+
+</html>

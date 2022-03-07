@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><button onclick="openWindow()">Open Now</button></p>
+    <p><button onclick="closeAll()">Close them</button></p>
+    <script>
+        function openWindow() {
+            // var mywindow = window.open("https://www.google.com","width=400");
+            var mywindow = window.open("https://www.google.com","pagee","width=300,status=1,toolbar=1");
+        }   
+        function closeAll(){
+            mywindow.close();
+        }
+    </script>
+
+</body>
+</html>
