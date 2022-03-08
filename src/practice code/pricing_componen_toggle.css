@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Barlow&family=Barlow+Condensed:wght@400;700&family=Inter:wght@300;500;700&family=Josefin+Sans:wght@300;400;600&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Montserrat:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  font-size: 15px;
+  background-color: hsl(240, 78%, 98%);
+  background-image: url(../../practice/pricing-component-with-toggle-master/images/bg-bottom.svg),
+    url(../../practice/pricing-component-with-toggle-master/images/bg-top.svg);
+  background-position: left bottom, right top;
+  background-repeat: no-repeat;
+}
+.container-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.content {
+  margin-top: 30px;
+  display: flex;
+}
+.container-bottom {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-box,
+.center-box,
+.right-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.left-box {
+  width: 300px;
+  height: 460px;
+  margin: 8px 0px;
+  border: 1px solid red;
+  background-color: white;
+  justify-content: space-evenly;
+}
+.center-box {
+  width: 300px;
+  height: 500px;
+  border: 1px solid red;
+  background-image: linear-gradient(hsl(234, 14%, 74%), hsl(232, 13%, 33%));
+  justify-content: space-evenly;
+}
+.right-box {
+  width: 300px;
+  height: 460px;
+  margin: 5px 0;
+  border: 1px solid red;
+  justify-content: space-evenly;
+
+  background-color: white;
+}
+li {
+  text-align: center;
+  list-style: none;
+  border-bottom: 2px solid hsl(234, 14%, 74%);
+}
+.amount {
+  font-size: 3rem;
+}
+.amount1 {
+  text-align: center;
+  font-size: xx-large;
+}
+.button {
+  padding: 10px;
+  background-color: hsl(233, 13%, 49%);
+  color: white;
+}
+.button1 {
+  padding: 10px;
+  background-color: white;
+  color: hsl(233, 13%, 49%);
+}
