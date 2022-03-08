@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+    <link rel="stylesheet" href="coding_bootcamp.css">
+    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Barlow&family=Barlow+Condensed:wght@400;700&family=Inter:wght@300;500;700&family=Josefin+Sans:wght@300;400;600&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+
+<body>
+    <section>
+        <div class="back-img"></div>
+
+        <div class="main">
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="text">
+                        <div class="quote-img"></div>
+                        <div class="para">
+                            <h2><q>I’ve been interested in coding for a while but never taken the jump, until now.
+                                    I couldn’t recommend this course enough. I’m now in the job of my dreams and so
+                                    excited about the future.</q></h2>
+                            <p><span>Tanya Sinclair</span>
+                                UX Engineer
+                            </p>
+                        </div>
+
+                    </div>
+                    <img src="../../practice/coding-bootcamp-testimonials-slider-master/images/image-tanya.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="text">
+                        <div class="quote-img"></div>
+                        <div class="para">
+                            <h2><q>If you want to lay the best foundation possible I’d recommend taking this course.
+                                    The depth the instructors go into is incredible. I now feel so confident about
+                                    starting up as a professional developer.</q></h2>
+                            <p><span>John Tarkpor</span>
+
+                                Junior Front-end Developer
+                            </p>
+                        </div>
+
+                    </div>
+                    <img src="../../practice/coding-bootcamp-testimonials-slider-master/images/image-john.jpg">
+                </div>
+
+                <div class="arrow">
+                    <a class="prev" onclick="plusSlides(1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+
+
+            </div>
+            <br>
+
+
+
+        </div>
+        <div class="curve"></div>
+    </section>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
+
+    <!-- “  ”
+
+  
+
+ 
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
