@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Barlow&family=Barlow+Condensed:wght@400;700&family=Inter:wght@300;500;700&family=Josefin+Sans:wght@300;400;600&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Montserrat:wght@700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;700&family=Rubik:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+menu {
+  font-family: "Raleway", sans-serif;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: hsl(218, 28%, 13%);
+}
+.logo0 {
+  width: 8rem;
+  height: 3rem;
+  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.head {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  background-color: hsl(219, 30%, 18%);
+}
+.menu {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  color: hsl(238, 22%, 44%);
+}
+
+.content1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -50px;
+  opacity: 0.99;
+  background-color: hsl(219, 30%, 18%);
+  margin-bottom: -20px;
+  position: relative;
+  margin-bottom: 130px;
+  text-align: center;
+}
+.content1 h1 {
+  color: white;
+}
+.content1 p,
+.block p {
+  color: hsl(238, 22%, 44%);
+}
+.button {
+  border-radius: 60px;
+  padding: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  color: white;
+  background-color: hsl(198, 60%, 50%);
+  margin-top: -100px;
+}
+.left {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.left1 h1 {
+  width: 650px;
+  color: white;
+}
+.left1 p {
+  color: hsl(238, 22%, 44%);
+}
+#para1 {
+  width: 580px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.image1 {
+  width: 600px;
+  height: 400px;
+  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/illustration-intro.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 50px;
+  background-position: center;
+}
+.curve-img {
+  margin-top: -130px;
+  width: 100%;
+  height: 500px;
+  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(219, 30%, 18%);
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(218, 28%, 13%);
+  margin-top: -80px;
+}
+.block h1 {
+  color: white;
+}
+.mob,
+.shield {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  height: 200px;
+  justify-content: space-around;
+}
+.comp {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+.comp-mob {
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/icon-access-anywhere.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.comp-shield {
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/icon-security.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.tick-tick {
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/icon-collaboration.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.tick-file {
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/icon-any-file.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.left h1,
+.left1 h1 {
+  font-size: xx-large;
+  margin-bottom: 30px;
+}
+
+.content2 {
+  display: flex;
+  justify-content: space-around;
+  background-color: hsl(218, 28%, 13%);
+  padding: 50px;
+}
+.image2 {
+  width: 100%;
+  height: 300px;
+  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/illustration-stay-productive.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#tic-pic {
+  margin-left: 150px;
+  margin-top: -12px;
+  width: 10px;
+  height: 10px;
+  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.left1 {
+  width: 700px;
+  height: 600px;
+  padding-left: 40px;
+}
+.part2 {
+  display: flex;
+  justify-content: space-between;
+}
+.right1 {
+  width: 600px;
+  height: 500px;
+  background-image: url(../../practice/fylo-landing-page-with-two-column-layout-master/images/illustration-2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.green {
+  margin-top: 30px;
+}
+.line {
+  width: 25%;
+  padding: 1px;
+  background-color: hsl(170, 45%, 43%);
+  margin-top: 10px;
+}
+.green p {
+  color: hsl(170, 45%, 43%);
+}
+.card1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: -250px;
+  margin-left: 20px;
+  padding: 50px;
+  background-color: hsl(218, 28%, 13%);
+}
+.card {
+  display: flex;
+  padding: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: top left;
+  margin-top: -70px;
+  background-color: hsl(218, 28%, 13%);
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: hsl(219, 30%, 18%);
+  box-shadow: 5px 5px 10px hsl(0, 0%, 75%);
+  font-size: x-small;
+  margin-right: 20px;
+  color: hsl(238, 22%, 44%);
+}
+.quote-img {
+  width: 5rem;
+  height: 5rem;
+  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/bg-quotes.png);
+  margin-left: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.99;
+}
+.img {
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/profile-1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+}
+.img1 {
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/profile-2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+}
+.img2 {
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/profile-3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+}
+.avetare {
+  margin-top: 20px;
+  display: flex;
+}
+.avetare p {
+  font-size: small;
+}
+.name p {
+  margin-bottom: 3px;
+  margin-left: 5px;
+}
+.content3 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  justify-content: space-between;
+  background-color: hsl(218, 28%, 13%);
+  padding-top: 50px;
+  margin: 40px 300px;
+  opacity: 0.99;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: hsl(238, 22%, 44%);
+  box-shadow: 1px 1px 15px hsl(216, 53%, 9%);
+}
+.right2 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.left2 {
+  width: 500px;
+}
+.left2 h1 {
+  margin-bottom: 30px;
+  color: white;
+}
+
+.right2 input {
+  border-radius: 10px;
+  border-style: none;
+  padding: 10px 80px;
+}
+.button3 input {
+  color: white;
+  background-color: hsl(224, 93%, 58%);
+  margin-left: 20px;
+  border-radius: 10px;
+  padding: 10px 60px;
+}
+.logos {
+  width: 12rem;
+  height: 5rem;
+  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 100px;
+  color: white;
+}
+.footer3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: hsl(216, 53%, 9%);
+  width: 100%;
+  height: 325px;
+  padding: 30px;
+  color: hsl(208, 11%, 55%);
+  margin-top: -80px;
+}
+
+.head {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo {
+  padding: 150px;
+  width: 200px;
+  height: 80px;
+  background-image: url(../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/logo.svg);
+  background-repeat: no-repeat;
+  margin: 60px;
+}
+.fb:hover,
+.tw:hover,
+.in:hover {
+  cursor: pointer;
+  background-color: yellow;
+}
+.menu-item,
+.menu-item1,
+.menu-item2,
+.ho:hover {
+  cursor: pointer;
+}
+
+.last {
+  width: 100%;
+  height: 315px;
+  /* background-color: white; */
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+}
+.last1 {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 200px;
+}
+.last1_1,
+.last1_2,
+.last1_3 {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  /* justify-content: space-around; */
+}
+.location {
+  background-image: url(../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/icon-location.svg);
+  width: 2rem;
+  background-repeat: no-repeat;
+  height: 2rem;
+  margin-right: 20px;
+}
+.phone {
+  background-image: url(../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/icon-phone.svg);
+  width: 1rem;
+  background-repeat: no-repeat;
+  height: 1rem;
+  margin-right: 12px;
+}
+
+.last0 {
+  display: flex;
+  flex-direction: column;
+}
+
+.last2,
+.last3 {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 70px;
+  justify-content: space-around;
+  padding: 10px;
+  color: hsl(208, 11%, 55%);
+}
+.last4 {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 100px;
+  margin: 100px;
+  justify-content: space-between;
+}
+.fb {
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../../images/logo-facebook.svg");
+  background-repeat: no-repeat;
+}
+.tw {
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../../images/logo-twitter.svg");
+  background-repeat: no-repeat;
+}
+
+.in {
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../../images/logo-instagram.svg");
+  background-repeat: no-repeat;
+}
+form {
+  margin-top: 30px;
+
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button3 {
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: hsl(223, 87%, 63%);
+  text-align: center;
+  color: white;
+  margin-left: 20px;
+}
+.button3:hover,
+.button:hover {
+  box-shadow: 1px 5px 30px hsl(223, 87%, 63%);
+}
+#msg {
+  margin-top: 20px;
+  margin-left: -200px;
+  color: hsl(354, 100%, 66%);
+}
+.green:hover {
+  cursor: pointer;
+}

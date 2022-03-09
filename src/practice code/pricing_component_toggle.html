@@ -32,8 +32,8 @@
             </div>
             <div class="content">
                 <p>Annually</p>
-                <label for="" class="switch">
-                    <input type="checkbox" name="" id="toggle">
+                <label class="switch">
+                    <input type="checkbox" id="toggle">
                     <span class="slider"></span>
                 </label>
                 <p>Monthly</p>
@@ -42,8 +42,8 @@
         <div class="container-bottom">
             <div class="left-box">
                 <p>Basic</p>
-                <p class="amount1">&dollar; <span class="amount">199.99</span></p>
-                <p class="amount1">&dollar; <span class="amount">19.99</span></p>
+                <p class="amount1-annual">&dollar; <span class="amount">199.99</span></p>
+                <p class="amount1-month">&dollar; <span class="amount">19.99</span></p>
                 <ul>
                     <li>500 GB Storage</li>
                     <li>2 Users Allowed</li>
@@ -56,8 +56,8 @@
             </div>
             <div class="center-box">
                 <p>Professional</p>
-                <p class="amount1">&dollar; <span class="amount">249.99</span></p>
-                <p class="amount1">&dollar; <span class="amount">24.99</span></p>
+                <p class="amount1-annual">&dollar; <span class="amount">249.99</span></p>
+                <p class="amount1-month">&dollar; <span class="amount">24.99</span></p>
                 <ul>
                     <li>1 TB Storage</li>
                     <li>5 Users Allowed</li>
@@ -70,8 +70,8 @@
             </div>
             <div class="right-box">
                 <p>Master</p>
-                <p class="amount1">&dollar; <span class="amount">399.99</span></p>
-                <p class="amount1">&dollar; <span class="amount">39.99</span></p>
+                <p class="amount1-annual">&dollar; <span class="amount">399.99</span></p>
+                <p class="amount1-month">&dollar; <span class="amount">39.99</span></p>
                 <ul>
                     <li>2 TB Storage</li>
                     <li>10 Users Allowed</li>
@@ -84,6 +84,25 @@
             </div>
         </div>
     </section>
+    <script>
+        let checkBox = document.querySelector('#toggle');
+        let monthly = document.querySelectorAll('.amount1-month');
+        let yearly = document.querySelectorAll('.amount1-annual');
+        checkBox.addEventListener('change', function () {
+            if (checkBox.checked) {
+                yearly.forEach(amount => amount.style.display = 'none');
+                monthly.forEach(amount => amount.style.display = 'flex');
+
+            } else {
+                yearly.forEach(amount => amount.style.display = 'flex');
+                monthly.forEach(amount => amount.style.display = 'none');
+
+            }
+        });
+
+
+
+    </script>
 
     <!--
 

@@ -15,21 +15,29 @@ body {
   background-repeat: no-repeat;
 }
 .container-top {
+  padding: 60px 20px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .content {
   margin-top: 30px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content label {
+  margin: 0 20px;
 }
 .container-bottom {
-  margin-top: 60px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 .left-box,
 .center-box,
@@ -39,50 +47,115 @@ body {
   justify-content: center;
   align-items: center;
   padding: 30px;
+  color: hsl(232, 13%, 33%);
+  border-radius: 10px;
 }
+h1 {
+  font-size: x-large;
+  color: hsl(232, 13%, 33%);
+}
+.content p {
+  color: hsl(234, 14%, 74%);
+}
+
 .left-box {
   width: 300px;
-  height: 460px;
+  height: 400px;
   margin: 8px 0px;
-  border: 1px solid red;
   background-color: white;
   justify-content: space-evenly;
 }
 .center-box {
   width: 300px;
-  height: 500px;
-  border: 1px solid red;
-  background-image: linear-gradient(hsl(234, 14%, 74%), hsl(232, 13%, 33%));
+  height: 440px;
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   justify-content: space-evenly;
+  color: hsl(240, 78%, 98%);
 }
 .right-box {
   width: 300px;
-  height: 460px;
+  height: 400px;
   margin: 5px 0;
-  border: 1px solid red;
   justify-content: space-evenly;
 
   background-color: white;
 }
 li {
+  padding-bottom: 10px;
   text-align: center;
   list-style: none;
-  border-bottom: 2px solid hsl(234, 14%, 74%);
+  border-bottom: 1px solid hsl(234, 14%, 74%);
+  width: 200px;
+  margin-top: 10px;
 }
 .amount {
   font-size: 3rem;
 }
-.amount1 {
+.amount1-annual,
+.amount1-month {
   text-align: center;
   font-size: xx-large;
+  text-align: center;
 }
 .button {
   padding: 10px;
-  background-color: hsl(233, 13%, 49%);
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+
   color: white;
+  padding-right: 60px;
+  padding-left: 60px;
 }
 .button1 {
   padding: 10px;
   background-color: white;
   color: hsl(233, 13%, 49%);
+  padding-right: 60px;
+  padding-left: 60px;
+}
+.switch input {
+  opacity: 0;
+}
+.switch {
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+  position: relative;
+  cursor: pointer;
+}
+.slider {
+  position: absolute;
+  background: linear-gradient(180deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 35px;
+}
+.slider:hover {
+  background: hsl(236, 72%, 79%);
+}
+.slider::before {
+  content: " ";
+
+  position: absolute;
+
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+  bottom: 4px;
+  left: 4px;
+
+  transition: 0.4s;
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+.amount1-month {
+  display: none;
+}
+.button,
+.button1:hover {
+  cursor: pointer;
 }
