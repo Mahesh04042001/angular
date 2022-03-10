@@ -7,44 +7,47 @@ body {
   font-size: 18px;
   font-family: "Bai Jamjuree", sans-serif;
 }
-.section {
+.section,
+.bg-img {
   display: flex;
 }
 .bg-img {
   background-image: url(../../../practice/clipboard-landing-page-master/images/bg-header-desktop.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: 250px;
-  display: flex;
+}
+.bg-img,
+.mobile {
   justify-content: center;
+}
+.bg-img,
+.after-header,
+.after-buttons,
+.mobile {
   align-items: center;
 }
 .logo {
-  text-align: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 5rem;
   height: 5rem;
+}
+.logo,
+.para1,
+.para2,
+.mobile {
+  text-align: center;
 }
 .after-header {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
-
 .para1 {
-  text-align: center;
   margin-top: 20px;
   width: 600px;
   color: hsl(201, 11%, 66%);
 }
 .button-horizontal {
-  display: flex;
-  flex-direction: row;
   width: 450px;
   height: 70px;
-  justify-content: space-around;
 }
 .buttons {
   margin-top: 30px;
@@ -80,11 +83,9 @@ body {
 .after-buttons {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-top: 50px;
 }
 .para2 {
-  text-align: center;
   margin-top: 20px;
   width: 600px;
   font-size: 16px;
@@ -98,14 +99,10 @@ body {
 .desktop-img {
   width: 550px;
   height: 400px;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .content-box {
   width: 350px;
   height: 400px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
   margin: 70px;
   margin-top: 20px;
@@ -113,7 +110,9 @@ body {
 }
 .content-box_top,
 .content-box_middle,
-.content-box_bottom {
+.content-box_bottom,
+.mobile,
+.content-box {
   display: flex;
   flex-direction: column;
 }
@@ -135,19 +134,12 @@ h3 {
   color: hsl(201, 11%, 66%);
 }
 .mobile {
-  display: flex;
-  flex-direction: column;
   margin-top: 60px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 .mobile-img {
   width: 600px;
   height: 400px;
   background-image: url();
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .content-box1 {
   width: 500px;
@@ -162,91 +154,84 @@ h3 {
 }
 .text-img {
   width: 3.6rem;
-  height: 3.5rem;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.text-icons {
-  width: 200px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: space-between;
+.text-img,
+.black-img {
+  height: 3.5rem;
 }
 .black-img {
   width: 4rem;
-  height: 3.5rem;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.black-icons {
-  width: 200px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: space-between;
-}
+
 .preview-img {
   width: 6rem;
   height: 3.5rem;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.preview-icons {
+.preview-icons,
+.black-icons,
+.text-icons {
   width: 200px;
   height: 200px;
-  display: flex;
-  flex-direction: column;
   text-align: center;
   align-items: center;
+}
+.flex1,
+.flex2,
+.flex3,
+.preview-icons,
+.text-icons {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .icons {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.icons,
+.footer1,
+.button-horizontal {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
 .google {
   width: 14rem;
   height: 4rem;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .ibm {
   width: 11rem;
   height: 4rem;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .micro {
   width: 14rem;
   height: 3rem;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .hp {
   width: 15rem;
   height: 6rem;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .vg {
   width: 20rem;
   height: 4.8rem;
+}
+.google,
+.ibm,
+.micro,
+.hp,
+.vg,
+.logo1,
+.preview-img,
+.text-img,
+.black-img,
+.mobile-img,
+.desktop-img,
+.logo,
+.bg-img {
   background-repeat: no-repeat;
   background-size: cover;
 }
 .footer1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 100px;
   background-color: hsl(201, 11%, 66%);
   height: 150px;
   color: hsl(210, 10%, 33%);
@@ -254,15 +239,16 @@ h3 {
 .logo1 {
   width: 3rem;
   height: 3rem;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
 }
-.footer1-1 {
+.footer1-1,
+.social-media {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   margin-top: 30px;
+}
+.footer1-1 {
+  justify-content: space-between;
 }
 .footer1 ul li {
   list-style: none;
@@ -270,9 +256,6 @@ h3 {
 .flex1,
 .flex2,
 .flex3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   margin-left: 70px;
   margin-bottom: 40px;
 }
@@ -283,31 +266,22 @@ h3 {
   padding-right: 10px;
   padding-bottom: 10px;
 }
-.social-media {
-  display: flex;
-  flex-direction: row;
-  margin-top: 30px;
-}
-.fb {
-  width: 2rem;
-  height: 2rem;
-  background-image: url("../../../practice/clipboard-landing-page-master/images/icon-facebook.svg");
-  background-repeat: no-repeat;
-  padding: 20px;
-}
-.tw {
-  width: 2rem;
-  height: 2rem;
-  background-image: url("../../../practice/clipboard-landing-page-master/images/icon-twitter.svg");
-  background-repeat: no-repeat;
-  padding: 20px;
-}
+.fb,
+.tw,
 .in {
   width: 2rem;
   height: 2rem;
-  background-image: url("../../../practice/clipboard-landing-page-master/images/icon-instagram.svg");
   background-repeat: no-repeat;
   padding: 20px;
+}
+.fb {
+  background-image: url("../../../practice/clipboard-landing-page-master/images/icon-facebook.svg");
+}
+.tw {
+  background-image: url("../../../practice/clipboard-landing-page-master/images/icon-twitter.svg");
+}
+.in {
+  background-image: url("../../../practice/clipboard-landing-page-master/images/icon-instagram.svg");
 }
 .flex2-1:hover {
   cursor: pointer;
