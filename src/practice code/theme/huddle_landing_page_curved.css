@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Barlow&family=Barlow+Condensed:wght@400;700&family=Inter:wght@300;500;700&family=Josefin+Sans:wght@300;400;600&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;700&family=Rubik:wght@400;500;700&display=swap");
+:root {
+  --container-box-shadow: -2px 10px 24px -1px hsl(208, 11%, 55%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+section {
+  width: 100vw;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 3500px;
+  width: 100%;
+}
+.box1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1600px;
+  width: 100%;
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  justify-content: space-between;
+  width: 100%;
+}
+.logo {
+  background-image: url(../../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/logo.svg);
+  background-repeat: no-repeat;
+  height: 80px;
+  margin: 60px;
+  padding: 150px;
+  width: 200px;
+}
+.try {
+  color: hsl(192, 100%, 9%);
+  background-color: white;
+  border-radius: 30px;
+  height: 70px;
+  padding: 20px 50px;
+  font-size: 20px;
+  margin: 40px;
+  font-weight: bold;
+}
+.foot {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.left {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 70px 0px 0px 60px;
+  width: 900px;
+}
+#heading1,
+#heading2,
+#heading3,
+#heading4 {
+  color: hsl(192, 100%, 9%);
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+#para1,
+#para2,
+#para3,
+#para4 {
+  color: hsl(208, 11%, 55%);
+  font-size: larger;
+  padding-bottom: 80px;
+}
+#para1 {
+  text-align: center;
+  width: 500px;
+}
+.button {
+  background-color: palevioletred;
+  border-radius: 60px;
+  color: white;
+  padding: 20px 60px;
+}
+.desktop-image {
+  background-image: url("../../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-mockups.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 580px;
+  opacity: 1;
+  width: 800px;
+}
+.number {
+  display: flex;
+  height: 500px;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.number p {
+  font-size: large;
+}
+.number h1 {
+  font-size: 50px;
+}
+.no-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.no-img {
+  background-image: url(../../../practice/huddle-landing-page-with-curved-sections-master/images/icon-communities.svg);
+  background-repeat: no-repeat contain;
+  height: 3rem;
+  width: 3rem;
+}
+.no-img1 {
+  background-image: url(../../../practice/huddle-landing-page-with-curved-sections-master/images/icon-messages.svg);
+  background-repeat: no-repeat contain;
+  height: 3rem;
+  width: 3rem;
+}
+.middile,
+.middile4 {
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  justify-content: space-around;
+  width: 100%;
+}
+.drk-curve {
+  background-image: url(../../../practice/huddle-landing-page-with-curved-sections-master/images/bg-section-top-desktop-1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  width: 100%;
+}
+.border1,
+.border4 {
+  background-color: hsl(207, 100%, 98%);
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  justify-content: space-between;
+  margin-top: -160px;
+  padding: 20px;
+}
+.left1,
+.left4 {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  margin-left: 40px;
+  width: 600px;
+}
+.grow-together {
+  background-image: url(../../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-grow-together.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin-left: 80px;
+  width: 500px;
+}
+.drk-curve1 {
+  background-image: url(../../../practice/huddle-landing-page-with-curved-sections-master/images/bg-section-bottom-desktop-1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  width: 100%;
+}
+.middile3 {
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  justify-content: space-around;
+  width: 100%;
+}
+.border3 {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 20px;
+}
+.flowing {
+  background-image: url(../../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-flowing-conversation.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 400px;
+  margin-left: 40px;
+  width: 500px;
+}
+.left3 {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  margin-left: 80px;
+  width: 600px;
+}
+.drk-curve2 {
+  background-image: url(../../../practice/huddle-landing-page-with-curved-sections-master/images/bg-section-top-desktop-2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  width: 100%;
+}
+.last4 {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  margin: 100px;
+  justify-content: space-between;
+  width: 300px;
+}
+.your-user {
+  background-image: url(../../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-your-users.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin-left: 80px;
+  width: 500px;
+}
+.drk-curve3 {
+  background-image: url(../../../practice/huddle-landing-page-with-curved-sections-master/images/bg-section-bottom-desktop-2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  width: 100%;
+}
+.banner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.banner h1 {
+  color: hsl(192, 100%, 9%);
+  margin-bottom: 30px;
+}
+.footer {
+  background-color: hsl(192, 100%, 9%);
+  color: hsl(208, 11%, 55%);
+  display: flex;
+  flex-direction: column;
+  height: 325px;
+  justify-content: flex-end;
+  padding: 30px;
+  width: 100%;
+}
+.drk-curve4 {
+  background-image: url(../../../practice/huddle-landing-page-with-curved-sections-master/images/bg-footer-top-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+  width: 100%;
+}
+.last {
+  display: flex;
+  flex-direction: row;
+  height: 315px;
+  justify-content: baseline;
+  margin-top: 100px;
+  width: 100%;
+}
+.last0 {
+  display: flex;
+  flex-direction: column;
+}
+.logo1 {
+  background-color: white;
+  background-image: url(../../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 3rem;
+  margin: 50px;
+  width: 12rem;
+}
+.last1 {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  width: 400px;
+}
+.last1-1,
+.last1-2,
+.last1-3 {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+.last1 p {
+  color: hsl(208, 11%, 55%);
+}
+.phone {
+  background-image: url(../../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/icon-phone.svg);
+  background-repeat: no-repeat;
+  height: 1rem;
+  margin-right: 12px;
+  width: 1rem;
+}
+.last1-3 p {
+  margin-top: -20px;
+}
+.mail {
+  background-image: url(../../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/icon-email.svg);
+  background-repeat: no-repeat;
+  height: 1rem;
+  margin-top: -20px;
+  width: 2rem;
+}
+.last2,
+.last3 {
+  color: hsl(208, 11%, 55%);
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  margin: 70px;
+  justify-content: space-around;
+  padding: 10px;
+  width: 300px;
+}
+.msg-box {
+  display: flex;
+}
+.msg-box input {
+  border-radius: 5px;
+  padding: 8px;
+  text-align: center;
+  margin-top: 30px;
+}
+.button0 {
+  background-color: palevioletred;
+  border-radius: 60px;
+  color: white;
+  padding: 10px 60px;
+  margin: 20px 0px 0px 10px;
+}
+.logo1:hover {
+  cursor: pointer;
+}
+.try:hover,
+.button:hover,
+.button0:hover,
+.fb:hover,
+.tw:hover,
+.in:hover {
+  background-color: yellow;
+  cursor: pointer;
+  color: black;
+}
