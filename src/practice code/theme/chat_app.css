@@ -30,12 +30,17 @@ section {
   width: 900px;
 }
 .mobile {
-  background-color: white;
   border-radius: 50px;
   height: 630px;
   margin-top: 50px;
   padding: 10px;
   width: 300px;
+}
+.mobile,
+.middle-para2,
+.middle-para3,
+.msg-box {
+  background-color: white;
 }
 .outer-line {
   border-radius: 50px;
@@ -76,6 +81,7 @@ img {
   height: 2rem;
   margin-left: 10px;
   width: 2rem;
+  cursor: pointer;
 }
 .name {
   margin-left: 10px;
@@ -96,7 +102,6 @@ ul li {
   height: 530px;
 }
 .middle-para1 {
-  background-color: hsl(206, 6%, 79%);
   border-radius: 10px;
   color: hsl(276, 55%, 52%);
   height: 50px;
@@ -110,59 +115,45 @@ ul li {
   margin-top: 10px;
   margin-left: 80px;
 }
-.dog1 {
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: 10px;
-  height: 3rem;
-  margin: 5px;
-  width: 3rem;
-}
-.dog2 {
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: 10px;
-  height: 3rem;
-  margin: 5px;
-  width: 3rem;
-}
+.dog1,
+.dog2,
 .dog3 {
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 10px;
   height: 3rem;
   margin: 5px;
+  cursor: pointer;
   width: 3rem;
 }
-.middle-para2 {
-  background-color: white;
+.middle-para2,
+.middle-para3 {
   border-radius: 10px;
   color: hsl(271, 15%, 43%);
+  padding: 5px;
+  margin-top: 10px;
+}
+.middle-para2 {
   height: 50px;
   margin-left: 80px;
-  margin-top: 10px;
-  padding: 5px;
   width: 180px;
 }
 .middle-para3 {
-  background-color: white;
-  border-radius: 10px;
-  color: hsl(271, 15%, 43%);
   height: 30px;
   margin-left: 100px;
-  margin-top: 10px;
-  padding: 5px;
   width: 160px;
 }
 .middle-para4 {
-  background-color: hsl(206, 6%, 79%);
   border-radius: 10px;
   color: hsl(276, 55%, 52%);
   height: 80px;
   margin-left: 10px;
   margin-top: 10px;
-  padding: 5px;
-  width: 200px;
+}
+.middle-para4,
+.curve2,
+.middle-para1 {
+  background-color: hsl(206, 6%, 79%);
 }
 .middle-div1 {
   border-bottom-right-radius: 10px;
@@ -170,8 +161,10 @@ ul li {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   height: 30px;
-  margin-left: 10px;
-  margin-top: 10px;
+  margin: 10px 0px 0px 10px;
+}
+.middle-para4,
+.middle-div1 {
   padding: 5px;
   width: 200px;
 }
@@ -184,12 +177,10 @@ span {
   margin-left: 50px;
 }
 .msg-box {
-  background-color: white;
   border-radius: 60px;
   color: hsl(206, 6%, 79%);
   height: 40px;
-  margin-left: 20px;
-  margin-top: 10px;
+  margin: 10px 0px 0px 20px;
   padding: 5px;
   width: 240px;
 }
@@ -201,6 +192,7 @@ span {
   padding: 5px;
   padding-left: 8px;
   padding-right: 8px;
+  cursor: pointer;
 }
 .center-para {
   margin-top: 300px;
@@ -218,10 +210,12 @@ span {
 }
 .curve2 {
   border-top-left-radius: 200px;
-  background-color: hsl(206, 6%, 79%);
   height: 550px;
   margin-top: -440px;
   margin-left: 1100px;
   opacity: 0.1;
   width: 300px;
+}
+.msg-box:hover {
+  border: 2px solid black;
 }
