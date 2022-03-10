@@ -12,15 +12,29 @@ body {
   min-height: 100vh;
   margin: 0px 0px 100px 100px;
 }
-.section-part {
+.section-part,
+.right,
+.file-folder-upload,
+.left,
+.gb,
+.popup,
+.outer {
   display: flex;
+}
+.section-part {
   padding: 250px 0px 0px 200px;
+}
+.right,
+.outer,
+.left,
+.play,
+.color,
+.popup {
+  border-radius: 10px;
 }
 .right {
   background-color: hsl(228, 56%, 26%);
-  border-radius: 10px;
   border-top-right-radius: 100px;
-  display: flex;
   flex-direction: column;
   height: 200px;
   justify-content: center;
@@ -36,14 +50,14 @@ body {
 }
 .file-folder-upload {
   align-items: center;
-  display: flex;
   margin-left: -30px;
 }
-.outer {
+.outer,
+.popup {
   align-items: center;
-  border-radius: 10px;
+}
+.outer {
   background-color: hsl(229, 57%, 11%);
-  display: flex;
   height: 40px;
   justify-content: center;
   margin: -30px 0px 0px 10px;
@@ -56,29 +70,27 @@ body {
 body {
   background-repeat: no-repeat;
 }
+.file,
+.folder,
+.upload {
+  height: 3rem;
+  width: 3rem;
+}
 .file {
   background-image: url(../../../practice/fylo-data-storage-component-master/fylo-data-storage-component-master/images/icon-document.svg);
-  height: 3rem;
   margin: 20px 0px 0px 10px;
-  width: 2rem;
 }
 .folder {
   background-image: url(../../../practice/fylo-data-storage-component-master/fylo-data-storage-component-master/images/icon-folder.svg);
-  height: 3rem;
   margin: 20px 0px -5px 8px;
-  width: 2rem;
 }
 .upload {
   background-image: url(../../../practice/fylo-data-storage-component-master/fylo-data-storage-component-master/images/icon-upload.svg);
-  height: 3rem;
   margin: 20px 0px -5px 8px;
-  width: 2rem;
 }
 .left {
   background-color: hsl(228, 56%, 26%);
-  border-radius: 10px;
   color: hsl(243, 100%, 93%);
-  display: flex;
   flex-direction: column;
   height: 150px;
   justify-content: space-around;
@@ -88,13 +100,11 @@ body {
 }
 .play {
   background-color: hsl(229, 57%, 11%);
-  border-radius: 10px;
   margin-top: -30px;
   padding: 2px;
 }
 .color {
   background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
-  border-radius: 10px;
   margin-right: 100px;
   padding: 2px;
 }
@@ -104,16 +114,13 @@ body {
   margin-left: 265px;
   padding: 5px;
 }
+
 .gb {
-  display: flex;
   justify-content: space-between;
   margin-top: -50px;
 }
 .popup {
-  align-items: center;
   background-color: white;
-  border-radius: 10px;
-  display: flex;
   height: 60px;
   margin-left: -180px;
   padding-left: 20px;
