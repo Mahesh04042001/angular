@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Barlow&family=Barlow+Condensed:wght@400;700&family=Inter:wght@300;500;700&family=Josefin+Sans:wght@300;400;600&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;700&family=Rubik:wght@400;500;700&display=swap");
 :root {
   --container-box-shadow: -2px 10px 24px -1px hsl(208, 11%, 55%);
+  --Pink: hsl(322, 100%, 66%);
+  --Light-Pink: hsl(321, 100%, 78%);
+  --Light-Red: hsl(0, 100%, 63%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Very-Pale-Blue: hsl(207, 100%, 98%);
 }
 * {
   box-sizing: border-box;
@@ -16,7 +21,7 @@ section {
 .box {
   display: flex;
   flex-direction: column;
-  height: 3500px;
+  height: 100vh;
   width: 100%;
 }
 .box1 {
@@ -29,6 +34,9 @@ section {
   height: 200px;
   width: 100%;
 }
+h1 {
+  font-family: "Poppins", sans-serif;
+}
 .head,
 .foot,
 .no-left,
@@ -40,7 +48,7 @@ section {
   justify-content: space-between;
 }
 .logo {
-  background-image: url(../../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/logo.svg);
+  background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
   height: 80px;
   margin: 60px;
@@ -49,7 +57,7 @@ section {
 }
 .try {
   color: hsl(192, 100%, 9%);
-  background-color: white;
+  background-color: var(--Very-Pale-Blue);
   border-radius: 30px;
   height: 70px;
   padding: 20px 50px;
@@ -82,7 +90,7 @@ section {
 #heading2,
 #heading3,
 #heading4 {
-  color: hsl(192, 100%, 9%);
+  color: var(--Very-Dark-Cyan);
   font-size: 40px;
   padding-bottom: 30px;
 }
@@ -90,22 +98,23 @@ section {
 #para2,
 #para3,
 #para4 {
-  color: hsl(208, 11%, 55%);
+  color: var(--Very-Dark-Cyan);
   font-size: larger;
   padding-bottom: 80px;
 }
 #para1 {
+  color: var(--Very-Dark-Cyan);
   text-align: center;
   width: 500px;
 }
 .button {
-  background-color: palevioletred;
+  background-color: var(--Light-Pink);
   border-radius: 60px;
-  color: white;
+  color: var(--Very-Pale-Blue);
   padding: 20px 60px;
 }
 .desktop-image {
-  background-image: url("../../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-mockups.svg");
+  background-image: url("../images/illustration-mockups.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 580px;
@@ -116,21 +125,22 @@ section {
 .number {
   height: 500px;
   justify-content: space-around;
-  margin-top: 100px;
+  margin-top: -530px;
 }
 .number p {
+  color: var(--Very-Dark-Cyan);
   font-size: large;
 }
 .number h1 {
   font-size: 50px;
 }
 .no-img {
-  background-image: url(../../../practice/huddle-landing-page-with-curved-sections-master/images/icon-communities.svg);
+  background-image: url(../images/icon-communities.svg);
   height: 3rem;
   width: 3rem;
 }
 .no-img1 {
-  background-image: url(../../../practice/huddle-landing-page-with-curved-sections-master/images/icon-messages.svg);
+  background-image: url(../images/icon-messages.svg);
   height: 3rem;
   width: 3rem;
 }
@@ -141,7 +151,7 @@ section {
   width: 100%;
 }
 .drk-curve {
-  background-image: url(../../../practice/huddle-landing-page-with-curved-sections-master/images/bg-section-top-desktop-1.svg);
+  background-image: url(../images/bg-section-top-desktop-1.svg);
   background-repeat: no-repeat;
   background-size: contain;
   height: 300px;
@@ -162,7 +172,7 @@ section {
 }
 .border1,
 .border4 {
-  background-color: hsl(207, 100%, 98%);
+  background-color: var(--Very-Pale-Blue);
 
   height: 500px;
   margin-top: -160px;
@@ -178,7 +188,7 @@ section {
   width: 600px;
 }
 .grow-together {
-  background-image: url(../../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-grow-together.svg);
+  background-image: url(../images/illustration-grow-together.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
@@ -186,7 +196,7 @@ section {
   width: 500px;
 }
 .drk-curve1 {
-  background-image: url(../../../practice/huddle-landing-page-with-curved-sections-master/images/bg-section-bottom-desktop-1.svg);
+  background-image: url(../images/bg-section-bottom-desktop-1.svg);
   height: 300px;
   width: 100%;
 }
@@ -201,7 +211,7 @@ section {
   padding: 20px;
 }
 .flowing {
-  background-image: url(../../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-flowing-conversation.svg);
+  background-image: url(../images/illustration-flowing-conversation.svg);
   height: 400px;
   margin-left: 40px;
   width: 500px;
@@ -215,7 +225,7 @@ section {
   width: 600px;
 }
 .drk-curve2 {
-  background-image: url(../../../practice/huddle-landing-page-with-curved-sections-master/images/bg-section-top-desktop-2.svg);
+  background-image: url(../images/bg-section-top-desktop-2.svg);
   height: 300px;
   width: 100%;
 }
@@ -225,7 +235,7 @@ section {
   width: 300px;
 }
 .your-user {
-  background-image: url(../../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-your-users.svg);
+  background-image: url(../images/illustration-your-users.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
@@ -233,24 +243,25 @@ section {
   width: 500px;
 }
 .drk-curve3 {
-  background-image: url(../../../practice/huddle-landing-page-with-curved-sections-master/images/bg-section-bottom-desktop-2.svg);
+  background-image: url(../images/bg-section-bottom-desktop-2.svg);
   height: 300px;
   width: 100%;
 }
 .banner {
   align-items: center;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .banner h1 {
-  color: hsl(192, 100%, 9%);
+  color: var(--Very-Dark-Cyan);
   margin-bottom: 30px;
 }
 .footer {
-  background-color: hsl(192, 100%, 9%);
-  color: hsl(208, 11%, 55%);
-  height: 325px;
+  background-color: var(--Very-Dark-Cyan);
+  color: var(--Very-Pale-Blue);
+  height: 355px;
   justify-content: flex-end;
+  margin-top: -150px;
   padding: 30px;
   width: 100%;
 }
@@ -266,9 +277,9 @@ section {
   background-repeat: no-repeat;
 }
 .drk-curve4 {
-  background-image: url(../../../practice/huddle-landing-page-with-curved-sections-master/images/bg-footer-top-desktop.svg);
-  height: 200px;
-  width: 100%;
+  background-image: url(../images/bg-footer-top-desktop.svg);
+  height: 300px;
+  margin-top: 50px;
 }
 .last {
   display: flex;
@@ -276,17 +287,18 @@ section {
   height: 315px;
   justify-content: baseline;
   margin-top: 100px;
-  width: 100%;
+  width: 1200px;
 }
 .last0,
 .footer,
 .banner {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 .logo1 {
-  background-color: white;
-  background-image: url(../../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/logo.svg);
+  background-color: var(--Very-Pale-Blue);
+  background-image: url(../images/logo.svg);
   height: 3rem;
   margin: 50px;
   width: 12rem;
@@ -303,7 +315,7 @@ section {
   margin: 20px;
 }
 .last1 p {
-  color: hsl(208, 11%, 55%);
+  color: var(--container-box-shadow);
 }
 .phone,
 .mail {
@@ -311,7 +323,7 @@ section {
   background-repeat: no-repeat;
 }
 .phone {
-  background-image: url(../../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/icon-phone.svg);
+  background-image: url(../images/icon-phone.svg);
   margin-right: 12px;
   width: 1rem;
 }
@@ -319,13 +331,16 @@ section {
   margin-top: -20px;
 }
 .mail {
-  background-image: url(../../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/icon-email.svg);
+  background-image: url(../images/icon-email.svg);
   margin-top: -20px;
   width: 2rem;
 }
+.last2 {
+  margin-left: 50px;
+}
 .last2,
 .last3 {
-  color: hsl(208, 11%, 55%);
+  color: var(--container-box-shadow);
   display: flex;
   flex-direction: column;
   height: 200px;
@@ -344,9 +359,9 @@ section {
   margin-top: 30px;
 }
 .button0 {
-  background-color: palevioletred;
+  background-color: var(--Light-Pink);
   border-radius: 60px;
-  color: white;
+  color: var(--Very-Pale-Blue);
   padding: 10px 60px;
   margin: 20px 0px 0px 10px;
 }
@@ -362,4 +377,8 @@ section {
   background-color: yellow;
   cursor: pointer;
   color: black;
+}
+.cur {
+  display: flex;
+  flex-direction: column;
 }

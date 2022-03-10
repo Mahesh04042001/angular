@@ -1,11 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Barlow&family=Barlow+Condensed:wght@400;700&family=Inter:wght@300;500;700&family=Josefin+Sans:wght@300;400;600&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Montserrat:wght@700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;700&family=Rubik:wght@400;500;700&display=swap");
+:root {
+  --Pale-Violet: hsl(276, 100%, 81%);
+  --Moderate-Violet: hsl(276, 55%, 52%);
+  --Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+  --Grayish-Blue: hsl(206, 6%, 79%);
+  --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+  --Dark-Grayish-Violet: hsl(270, 7%, 64%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grayish-Violet: hsl(270, 20%, 96%);
+  --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+  --Very-Light-Magenta: hsl(289, 100%, 72%);
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
-  background-color: hsl(270, 20%, 96%);
+  background-color: var(--Light-Grayish-Violet);
   font-size: 14px;
   font-family: "Rubik", sans-serif;
 }
@@ -40,7 +52,7 @@ section {
 .middle-para2,
 .middle-para3,
 .msg-box {
-  background-color: white;
+  background-color: var(--White);
 }
 .outer-line {
   border-radius: 50px;
@@ -49,13 +61,13 @@ section {
 }
 .camera {
   border-radius: 50px;
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--White);
   height: 20px;
   margin-left: 60px;
   width: 150px;
 }
 .upper {
-  border: 1px solid white;
+  border: 1px solid var(--White);
   background-image: linear-gradient(hsl(264, 100%, 61%), hsl(293, 100%, 63%));
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -70,7 +82,7 @@ section {
   margin-left: 30px;
 }
 .arrow {
-  color: white;
+  color: var(--White);
   margin-top: 10px;
   margin-left: -20px;
 }
@@ -90,20 +102,20 @@ img {
   padding-left: 50px;
 }
 ul li {
-  color: hsl(289, 100%, 72%);
+  color: var(--Very-Light-Magenta);
   height: 6px;
 }
 .middle {
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  background-color: hsl(270, 20%, 96%);
+  background-color: var(--Light-Grayish-Violet);
   display: flex;
   flex-direction: column;
   height: 530px;
 }
 .middle-para1 {
   border-radius: 10px;
-  color: hsl(276, 55%, 52%);
+  color: var(--Moderate-Violet);
   height: 50px;
   margin-left: 10px;
   margin-top: 10px;
@@ -129,7 +141,7 @@ ul li {
 .middle-para2,
 .middle-para3 {
   border-radius: 10px;
-  color: hsl(271, 15%, 43%);
+  color: var(--Desaturated-Dark-Violet);
   padding: 5px;
   margin-top: 10px;
 }
@@ -145,7 +157,7 @@ ul li {
 }
 .middle-para4 {
   border-radius: 10px;
-  color: hsl(276, 55%, 52%);
+  color: var(--Moderate-Violet);
   height: 80px;
   margin-left: 10px;
   margin-top: 10px;
@@ -153,7 +165,7 @@ ul li {
 .middle-para4,
 .curve2,
 .middle-para1 {
-  background-color: hsl(206, 6%, 79%);
+  background-color: var(--Grayish-Blue);
 }
 .middle-div1 {
   border-bottom-right-radius: 10px;
@@ -178,16 +190,16 @@ span {
 }
 .msg-box {
   border-radius: 60px;
-  color: hsl(206, 6%, 79%);
+  color: var(--Grayish-Blue);
   height: 40px;
   margin: 10px 0px 0px 20px;
   padding: 5px;
   width: 240px;
 }
 .send {
-  background-color: hsl(271, 36%, 24%);
+  background-color: var(--Very-Dark-Desaturated-Violet);
   border-radius: 50%;
-  color: white;
+  color: var(--White);
   margin-left: 80px;
   padding: 5px;
   padding-left: 8px;
@@ -200,11 +212,11 @@ span {
   margin-right: -50px;
 }
 .center-para h1 {
-  color: hsl(271, 36%, 24%);
+  color: var(--Very-Dark-Desaturated-Violet);
   font-size: 50px;
 }
 .center-para p {
-  color: hsl(206, 6%, 79%);
+  color: var(--Grayish-Blue);
   font-size: 20px;
   margin-top: 30px;
 }

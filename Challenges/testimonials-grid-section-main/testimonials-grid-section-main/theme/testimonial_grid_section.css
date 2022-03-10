@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Barlow&family=Barlow+Condensed:wght@400;700&family=Barlow+Semi+Condensed:wght@500;600&family=Inter:wght@300;500;700&family=Josefin+Sans:wght@300;400;600&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;700&family=Rubik:wght@700&display=swap");
+:root {
+  --main-font: "Barlow Semi Condensed", sans-serif;
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(0, 0%, 81%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  align-items: baseline;
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  font-family: var(--main-font);
+  height: 100%;
+  padding-left: 50px;
+  padding: 20px;
+  width: 100%;
+}
+.container1,
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -20px;
+}
+.container1 {
+  height: 800px;
+  padding: 20px;
+  width: 950px;
+}
+.container2 {
+  height: 800px;
+  width: 340px;
+  margin-top: 20px;
+}
+.box1,
+.box2,
+.box3,
+.box4 {
+  box-shadow: 2px 1px 10px grey;
+  border-radius: 10px;
+  height: 340px;
+  padding: 20px;
+  margin-top: 30px;
+}
+.box1 {
+  align-content: space-between;
+  background-color: var(--Moderate-violet);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  color: var(--Light-gray);
+  justify-content: stretch;
+  justify-content: end;
+  width: 600px;
+}
+.box2 {
+  background-color: var(--Very-dark-grayish-blue);
+  margin-left: 20px;
+  width: 280px;
+}
+.box3 {
+  background-color: var(--White);
+  color: var(--Very-dark-grayish-blue);
+  margin-top: 50px;
+  width: 350px;
+}
+.box4 {
+  background-color: var(--Very-dark-blackish-blue);
+  color: var(--Light-gray);
+  margin-left: 20px;
+  margin-top: 50px;
+  width: 530px;
+}
+.box5 {
+  color: var(--Very-dark-grayish-blue);
+  box-shadow: 2px 1px 10px grey;
+  border-radius: 10px;
+  height: 720px;
+  padding: 20px;
+  margin-left: 20px;
+  margin-top: -30px;
+  width: 350px;
+}
+.container p {
+  padding-top: 5px;
+}
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  border-radius: 30px;
+  float: left;
+  height: 3rem;
+  width: 3rem;
+}
+.daniel-name1,
+.jonathan-name2,
+.jeanette-name3,
+.patrick-name4,
+.kira-name5 {
+  margin-top: -5px;
+  padding-left: 60px;
+}
+.daniel-name,
+.jonathan-name {
+  color: var(--Very-dark-grayish-blue);
+  margin-top: -5px;
+  margin-bottom: 30px;
+  padding-left: 60px;
+  font-size: small;
+}
+.jeanette-name,
+.patrick-name,
+.kira-name {
+  font-size: small;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding-left: 60px;
+}
+.box2-1 p,
+.box2-1 p,
+.box3 p,
+.box4 p,
+.box5 p {
+  line-height: 10px;
+}
+h1 {
+  margin-bottom: 20px;
+}
+.box1 h1,
+.box2 h1 {
+  color: var(--White);
+}
+.box1 p,
+.box2 p {
+  color: var(--Light-gray);
+}
+.daniel-name1,
+.jonathan-name2 {
+  color: var(--White);
+}
+.daniel-name,
+.jonathan-name {
+  color: var(--Light-gray);
+}
+.jeanette-name3,
+.kira-name5,
+.box5 h1,
+.box3 h1 {
+  color: var(--Very-dark-blackish-blue);
+}
+.patrick-name4,
+.box4 h1 {
+  color: var(--White);
+}

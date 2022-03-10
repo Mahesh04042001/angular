@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Barlow&family=Barlow+Condensed:wght@400;700&family=Inter:wght@300;500;700&family=Josefin+Sans:wght@300;400;600&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Montserrat:wght@700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;700&display=swap");
+:root {
+  --Pale-Blue: hsl(243, 100%, 93%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --Dark-Blue: hsl(228, 56%, 26%);
+  --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
-  background-color: hsl(229, 57%, 11%);
-  background-image: url(../../../practice/fylo-data-storage-component-master/fylo-data-storage-component-master/images/bg-desktop.png);
+  background-color: var(--Very-Dark-Blue);
+  background-image: url(../fylo-data-storage-component-master/images/bg-desktop.png);
   background-position: bottom;
   font: 14px "Raleway", sans-serif;
   min-height: 100vh;
@@ -33,7 +39,7 @@ body {
   border-radius: 10px;
 }
 .right {
-  background-color: hsl(228, 56%, 26%);
+  background-color: var(--Dark-Blue);
   border-top-right-radius: 100px;
   flex-direction: column;
   height: 200px;
@@ -42,7 +48,7 @@ body {
   width: 300px;
 }
 .logo {
-  background-image: url(../../../practice/fylo-data-storage-component-master/fylo-data-storage-component-master/images/logo.svg);
+  background-image: url(../fylo-data-storage-component-master/images/logo.svg);
   background-size: contain;
   height: 6rem;
   margin-left: -14px;
@@ -57,7 +63,7 @@ body {
   align-items: center;
 }
 .outer {
-  background-color: hsl(229, 57%, 11%);
+  background-color: var(--Very-Dark-Blue);
   height: 40px;
   justify-content: center;
   margin: -30px 0px 0px 10px;
@@ -77,20 +83,20 @@ body {
   width: 3rem;
 }
 .file {
-  background-image: url(../../../practice/fylo-data-storage-component-master/fylo-data-storage-component-master/images/icon-document.svg);
+  background-image: url(../fylo-data-storage-component-master/images/icon-document.svg);
   margin: 20px 0px 0px 10px;
 }
 .folder {
-  background-image: url(../../../practice/fylo-data-storage-component-master/fylo-data-storage-component-master/images/icon-folder.svg);
+  background-image: url(../fylo-data-storage-component-master/images/icon-folder.svg);
   margin: 20px 0px -5px 8px;
 }
 .upload {
-  background-image: url(../../../practice/fylo-data-storage-component-master/fylo-data-storage-component-master/images/icon-upload.svg);
+  background-image: url(../fylo-data-storage-component-master/images/icon-upload.svg);
   margin: 20px 0px -5px 8px;
 }
 .left {
-  background-color: hsl(228, 56%, 26%);
-  color: hsl(243, 100%, 93%);
+  background-color: var(--Dark-Blue);
+  color: var(--Pale-Blue);
   flex-direction: column;
   height: 150px;
   justify-content: space-around;
@@ -99,7 +105,7 @@ body {
   width: 450px;
 }
 .play {
-  background-color: hsl(229, 57%, 11%);
+  background-color: var(--Very-Dark-Blue);
   margin-top: -30px;
   padding: 2px;
 }
@@ -109,7 +115,7 @@ body {
   padding: 2px;
 }
 .ball {
-  background-color: white;
+  background-color: var(--Pale-Blue);
   border-radius: 80px;
   margin-left: 265px;
   padding: 5px;
@@ -120,7 +126,7 @@ body {
   margin-top: -50px;
 }
 .popup {
-  background-color: white;
+  background-color: var(--Pale-Blue);
   height: 60px;
   margin-left: -180px;
   padding-left: 20px;
