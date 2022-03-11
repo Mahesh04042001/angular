@@ -26,7 +26,7 @@ section {
 .image {
   width: 600px;
   height: 700px;
-  background-image: url(../../practice/faq-accordion-card-main/images/bg-pattern-desktop.svg);
+  background-image: url(../images/bg-pattern-desktop.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -38,7 +38,7 @@ section {
   margin-left: 250px;
   width: 350px;
   height: 300px;
-  background-image: url(../../practice/faq-accordion-card-main/images/illustration-woman-online-desktop.svg);
+  background-image: url(../images/illustration-woman-online-desktop.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -48,7 +48,7 @@ section {
   margin-right: -80px;
   width: 150px;
   height: 200px;
-  background-image: url(../../practice/faq-accordion-card-main/images/illustration-box-desktop.svg);
+  background-image: url(../images/illustration-box-desktop.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -81,7 +81,7 @@ section {
 #arrow5 {
   width: 1rem;
   height: 1rem;
-  background-image: url(../../practice/faq-accordion-card-main/images/icon-arrow-down.svg);
+  background-image: url(../images/icon-arrow-down.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }

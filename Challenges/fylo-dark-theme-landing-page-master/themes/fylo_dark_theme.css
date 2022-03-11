@@ -20,7 +20,7 @@ section {
 .logo0 {
   width: 8rem;
   height: 3rem;
-  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/logo.svg);
+  background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -37,7 +37,6 @@ section {
   justify-content: space-around;
   color: hsl(238, 22%, 44%);
 }
-
 .content1 {
   display: flex;
   flex-direction: column;
@@ -87,11 +86,10 @@ section {
   text-align: center;
   margin-bottom: 100px;
 }
-
 .image1 {
   width: 600px;
   height: 400px;
-  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/illustration-intro.png);
+  background-image: url(../images/illustration-intro.png);
   background-repeat: no-repeat;
   background-size: contain;
   margin-left: 50px;
@@ -101,7 +99,7 @@ section {
   margin-top: -130px;
   width: 100%;
   height: 500px;
-  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/bg-curvy-desktop.svg);
+  background-image: url(../images/bg-curvy-desktop.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-color: hsl(219, 30%, 18%);
@@ -136,38 +134,36 @@ section {
 .comp-mob {
   width: 3rem;
   height: 3rem;
-  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/icon-access-anywhere.svg);
+  background-image: url(../images/icon-access-anywhere.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .comp-shield {
   width: 3rem;
   height: 3rem;
-  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/icon-security.svg);
+  background-image: url(../images/icon-security.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .tick-tick {
   width: 3rem;
   height: 3rem;
-  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/icon-collaboration.svg);
+  background-image: url(../images/icon-collaboration.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .tick-file {
   width: 3rem;
   height: 3rem;
-  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/icon-any-file.svg);
+  background-image: url(../images/icon-any-file.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
-
 .left h1,
 .left1 h1 {
   font-size: xx-large;
   margin-bottom: 30px;
 }
-
 .content2 {
   display: flex;
   justify-content: space-around;
@@ -177,7 +173,7 @@ section {
 .image2 {
   width: 100%;
   height: 300px;
-  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/illustration-stay-productive.png);
+  background-image: url(../images/illustration-stay-productive.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -186,7 +182,7 @@ section {
   margin-top: -12px;
   width: 10px;
   height: 10px;
-  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/icon-arrow.svg);
+  background-image: url(../images/icon-arrow.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -202,7 +198,7 @@ section {
 .right1 {
   width: 600px;
   height: 500px;
-  background-image: url(../../practice/fylo-landing-page-with-two-column-layout-master/images/illustration-2.svg);
+  background-image: url(../images/illustration-2.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -248,7 +244,7 @@ section {
 .quote-img {
   width: 5rem;
   height: 5rem;
-  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/bg-quotes.png);
+  background-image: url(../images/bg-quotes.png);
   margin-left: 30px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -257,7 +253,7 @@ section {
 .img {
   width: 3rem;
   height: 3rem;
-  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/profile-1.jpg);
+  background-image: url(../images/profile-1.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 50%;
@@ -265,7 +261,7 @@ section {
 .img1 {
   width: 3rem;
   height: 3rem;
-  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/profile-2.jpg);
+  background-image: url(../images/profile-2.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 50%;
@@ -273,7 +269,7 @@ section {
 .img2 {
   width: 3rem;
   height: 3rem;
-  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/profile-3.jpg);
+  background-image: url(../images/profile-3.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 50%;
@@ -332,7 +328,7 @@ section {
 .logos {
   width: 12rem;
   height: 5rem;
-  background-image: url(../../practice/fylo-dark-theme-landing-page-master/images/logo.svg);
+  background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 100px;
@@ -349,7 +345,6 @@ section {
   color: hsl(208, 11%, 55%);
   margin-top: -80px;
 }
-
 .head {
   width: 100%;
   height: 200px;
@@ -361,7 +356,7 @@ section {
   padding: 150px;
   width: 200px;
   height: 80px;
-  background-image: url(../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/logo.svg);
+  background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
   margin: 60px;
 }
@@ -377,11 +372,9 @@ section {
 .ho:hover {
   cursor: pointer;
 }
-
 .last {
   width: 100%;
   height: 315px;
-  /* background-color: white; */
   display: flex;
   flex-direction: row;
   justify-content: baseline;
@@ -398,28 +391,25 @@ section {
   display: flex;
   flex-direction: row;
   margin: 20px;
-  /* justify-content: space-around; */
 }
 .location {
-  background-image: url(../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/icon-location.svg);
+  background-image: url(../images/icon-location.svg);
   width: 2rem;
   background-repeat: no-repeat;
   height: 2rem;
   margin-right: 20px;
 }
 .phone {
-  background-image: url(../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/icon-phone.svg);
+  background-image: url(../images/icon-phone.svg);
   width: 1rem;
   background-repeat: no-repeat;
   height: 1rem;
   margin-right: 12px;
 }
-
 .last0 {
   display: flex;
   flex-direction: column;
 }
-
 .last2,
 .last3 {
   width: 300px;
@@ -442,20 +432,19 @@ section {
 .fb {
   width: 2rem;
   height: 2rem;
-  background-image: url("../../images/logo-facebook.svg");
+  background-image: url("../images/logo-facebook.svg");
   background-repeat: no-repeat;
 }
 .tw {
   width: 2rem;
   height: 2rem;
-  background-image: url("../../images/logo-twitter.svg");
+  background-image: url("../images/logo-twitter.svg");
   background-repeat: no-repeat;
 }
-
 .in {
   width: 2rem;
   height: 2rem;
-  background-image: url("../../images/logo-instagram.svg");
+  background-image: url("../images/logo-instagram.svg");
   background-repeat: no-repeat;
 }
 form {
@@ -465,7 +454,6 @@ form {
   display: flex;
   justify-content: space-around;
 }
-
 .button3 {
   padding-left: 40px;
   padding-right: 40px;

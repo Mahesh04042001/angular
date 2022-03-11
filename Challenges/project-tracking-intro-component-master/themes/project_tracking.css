@@ -28,7 +28,7 @@ main {
 .logo {
   width: 3rem;
   height: 3rem;
-  background-image: url(../../practice/project-tracking-intro-component-master/images/logo.svg);
+  background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
   margin-left: 80px;
 }
@@ -94,7 +94,7 @@ section {
   margin-right: -150px;
   width: 800px;
   height: 800px;
-  background-image: url(../../practice/project-tracking-intro-component-master/images/illustration-devices.svg);
+  background-image: url(../images/illustration-devices.svg);
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0.9;

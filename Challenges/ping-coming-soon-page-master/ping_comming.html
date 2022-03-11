@@ -4,22 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
-
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
     <title>Frontend Mentor | Ping coming soon page</title>
-    <link rel="stylesheet" href="ping_comming.css">
+    <link rel="stylesheet" href="./themes/ping_comming.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Josefin+Sans:wght@300;400;600&family=Libre+Franklin:wght@300;600;700&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
 </head>
 
 <body>
@@ -28,9 +20,11 @@
             <div class="header">
                 <div class="logo"></div>
                 <div class="heading">
-                    <h1><span>
+                    <h1>
+                        <span>
                             We are launching
-                        </span>soon!</h1>
+                        </span>soon!
+                    </h1>
                 </div>
                 <div class="sub">
                     <p>Subscribe and get notified</p>
@@ -38,13 +32,15 @@
             </div>
             <div class="mail">
                 <form action="" name="myForm">
-                    <div><input type="email" name="email" class="mail-box" placeholder="Your email address"></div>
-                    <div><input type="submit" value="Notify Me" class="button"
+                    <div>
+                        <input type="email" name="email" class="mail-box" placeholder="Your email address">
+                    </div>
+                    <div>
+                        <input type="submit" value="Notify Me" class="button"
                             onclick="ValidateEmail(document.myForm.email);">
                     </div>
                 </form>
                 <div id="msg"></div>
-
             </div>
             <div class="image"></div>
             <div class="social-media">
@@ -53,54 +49,29 @@
                 <div class="in"></div>
             </div>
             <div class="foot">
-                <p>&copy; Copyright Ping. All rights reserved.</p>
+                <p>
+                    &copy; Copyright Ping. All rights reserved.
+                </p>
             </div>
         </section>
     </main>
     <script>
-
         function ValidateEmail(input) {
-
             var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
             if (input.value.match(validRegex)) {
-
-
-
                 return true;
-
             } else {
-
                 const message = "Please provide a email address!";
-
                 document.getElementById('msg').innerHTML = message;
                 setTimeout(() => {
                     emailMessage.style.display = 'none';
                 }, 1000);
                 document.myForm.email.focus();
                 event.preventDefault();
-
                 return false;
-
             }
-
         }
     </script>
-    <!-- 
-   
-
-  
-
-  
-
-  
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer> -->
 </body>
 
 </html>

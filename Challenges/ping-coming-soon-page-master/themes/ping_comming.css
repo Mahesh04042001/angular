@@ -38,7 +38,7 @@ h1 {
 .logo {
   width: 6rem;
   height: 2rem;
-  background-image: url(../../practice/ping-coming-soon-page-master/images/logo.svg);
+  background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
 }
 .header span,
@@ -83,7 +83,7 @@ p {
   margin-top: 50px;
   width: 70%;
   height: 300px;
-  background-image: url(../../practice/ping-coming-soon-page-master/images/illustration-dashboard.png);
+  background-image: url(../images/illustration-dashboard.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -107,19 +107,19 @@ p {
   cursor: pointer;
 }
 .fb {
-  background-image: url(../../images/logo-facebook.svg);
+  background-image: url(../images/logo-facebook.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .tw {
-  background-image: url(../../images/logo-twitter.svg);
+  background-image: url(../images/logo-twitter.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .in {
-  background-image: url(../../images/logo-instagram.svg);
+  background-image: url(../images/logo-instagram.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
