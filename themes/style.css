@@ -21,7 +21,7 @@ body {
   text-decoration: none;
   padding-top: 50px;
 }
-#header {
+.header {
   text-transform: uppercase;
 }
 .content {
