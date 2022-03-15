@@ -13,8 +13,8 @@ body {
   font-size: 18px;
   font-family: "Bai Jamjuree", sans-serif;
 }
-.section,
-.bg-img {
+.bg-img,
+.section {
   display: flex;
 }
 .bg-img {
@@ -26,9 +26,9 @@ body {
 .mobile {
   justify-content: center;
 }
-.bg-img,
 .after-header,
 .after-buttons,
+.bg-img,
 .mobile {
   align-items: center;
 }
@@ -37,9 +37,9 @@ body {
   height: 5rem;
 }
 .logo,
+.mobile,
 .para1,
-.para2,
-.mobile {
+.para2 {
   text-align: center;
 }
 .after-header {
@@ -78,8 +78,8 @@ body {
 .flex2_1:hover,
 .flex3:hover,
 .fb:hover,
-.tw:hover,
-.in:hover {
+.in:hover,
+.tw:hover {
   cursor: pointer;
   text-decoration: underline;
 }

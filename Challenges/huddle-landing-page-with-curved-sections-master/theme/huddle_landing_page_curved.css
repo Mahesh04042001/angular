@@ -37,14 +37,13 @@ section {
 h1 {
   font-family: "Poppins", sans-serif;
 }
-.head,
-.foot,
-.no-left,
-.border1,
+.banner .border1,
 .border3,
 .border4,
+.foot,
+.head,
 .last4,
-.banner {
+.no-left {
   justify-content: space-between;
 }
 .logo {
@@ -157,15 +156,15 @@ h1 {
   height: 300px;
   width: 100%;
 }
+.border1,
+.border3,
+.border4,
+.head,
 .last1-1,
 .last1-2,
 .last1-3,
-.border1,
-.border4,
-.middile3,
 .last4,
-.border3,
-.head,
+.middile3,
 .number {
   display: flex;
   flex-direction: row;
@@ -265,12 +264,12 @@ h1 {
   padding: 30px;
   width: 100%;
 }
-.flowing,
 .drk-curve2,
 .drk-curve3,
 .drk-curve4,
-.logo1,
 .drk-curve1,
+.flowing,
+.logo1,
 .no-img,
 .no-img1 {
   background-size: contain;
@@ -289,9 +288,9 @@ h1 {
   margin-top: 100px;
   width: 1200px;
 }
-.last0,
+.banner,
 .footer,
-.banner {
+.last0 {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -368,12 +367,12 @@ h1 {
 .logo1:hover {
   cursor: pointer;
 }
-.try:hover,
 .button:hover,
 .button0:hover,
 .fb:hover,
-.tw:hover,
-.in:hover {
+.in:hover,
+.try:hover,
+.tw:hover {
   background-color: yellow;
   cursor: pointer;
   color: black;
