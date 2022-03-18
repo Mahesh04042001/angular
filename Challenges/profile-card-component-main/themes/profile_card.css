@@ -1,0 +1,103 @@
+body {
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(../images/bg-pattern-top.svg);
+  background-repeat: no-repeat;
+}
+.container {
+  align-content: center;
+  background-color: white;
+  border-radius: 25px;
+  height: 85vh;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-height: 44rem;
+  max-width: 28.3rem;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 90%;
+}
+.header-image {
+  background-image: url("../images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 25px 25px 0 0;
+  height: 100%;
+  min-height: 14rem;
+  overflow: hidden;
+  width: 100%;
+}
+.photo {
+  background-image: url(../images/image-victor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 55px;
+  height: 7rem;
+  margin-left: 170px;
+  margin-top: -50px;
+  width: 7rem;
+}
+.name,
+.foot p {
+  color: hsl(229, 23%, 23%);
+}
+.number {
+  font-size: x-large;
+}
+span {
+  margin-left: 10px;
+}
+.ul1 li {
+  display: inline;
+  font-size: large;
+  text-decoration: none;
+}
+ul li {
+  color: hsla(0, 0%, 100%, 0.75);
+  display: inline;
+  font-size: xx-small;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.foot {
+  align-content: space-between;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+  display: inline-flex;
+  flex-direction: row;
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: 900;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  width: 85%;
+}
+hr {
+  margin-top: 30px;
+}
+.follow {
+  padding-right: 90px;
+}
+.likes {
+  padding-right: 90px;
+}
+span,
+h2,
+#fo,
+#po,
+#li {
+  color: hsl(0, 0%, 59%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

@@ -34,46 +34,50 @@
                         <img src="./images/icon-sun.svg" alt="sun-img">
                     </div>
                 </div>
-                <div class="todo-main">
-                    <form action="">
-                        <input type="text" placeholder="Create a new todo..." id="text">
-                    </form>
-                    <div class="todo-list">
-                        <div class="todo-container">
-                            <div class="todo-li">
-                                <div class="checkbox">
-                                    <img src="./images/icon-check.svg" alt="check-button">
-                                </div>
-                                <p>hello</p>
-                                <button class="closs">
-                                    <img src="./images/icon-cross.svg" alt="closs-button">
-                                </button>
-                            </div>
-                        </div>
 
+                <div id="myDIV" class="todo-main">
+                    <span onclick="newElement()" class="addBtn"></span>
+
+                    <input type="text" id="myInput" placeholder="Create a new todo.....">
+                </div>
+                <div class="list">
+                    <ul id="myUL">
+                        <li>
+                            Hit the gym</li>
+                        <li class="checked">Pay bills</li>
+                        <li>Meet George</li>
+                        <li>Buy eggs</li>
+                        <li>Read a book</li>
+                        <li>Organize office</li>
+                    </ul>
+                </div>
+
+
+                <div class="footer">
+                    <div>
+                        <p>items left</p>
                     </div>
-                    <div class="footer">
-                        <div>
-                            <p>items left</p>
-                        </div>
-                        <div class="footer-middle">
-                            <p>All</p>
-                            <p>Active</p>
-                            <p>Completed</p>
-                        </div>
-                        <div>
-                            <p>
-                                Clear Completed
-                            </p>
-                        </div>
+                    <div class="footer-middle">
+                        <p>All</p>
+                        <p>Active</p>
+                        <p>Completed</p>
+                    </div>
+                    <div>
+                        <p>
+                            Clear Completed
+                        </p>
                     </div>
                 </div>
+                <div class="drag">
+                    <p>Drag and drop to reorder list</p>
+                </div>
+            </div>
 
             </div>
 
         </section>
     </main>
-
+    <script src="./themes/todo.js"></script>
     <!-- 
 
     /* Add dynamic number*/ 
@@ -84,7 +88,7 @@
 
     
 
-    Drag and drop to reorder list
+    
 
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

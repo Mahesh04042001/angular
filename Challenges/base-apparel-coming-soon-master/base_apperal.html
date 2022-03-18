@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Frontend Mentor | Base Apparel coming soon page</title>
-    <link rel="stylesheet" href="./themes/base.css">
+    <link rel="stylesheet" href="themes/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -35,11 +35,14 @@
                         <div class="mail">
                             <div class="e">
                                 <form action="pageh.html" name="myForm">
-                                    <p><input placeholder=" Email Address" name="email" type="email" size="30">
+                                    <p>
+                                        <input placeholder=" Email Address" name="email" type="email" size="30">
                                     </p>
                                 </form>
                             </div>
-                            <div><button class="span" onclick="checkForm();"></button></div>
+                            <div>
+                                <button class="span" onclick="checkForm();"></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -47,15 +50,7 @@
             <div class="image"></div>
         </section>
     </main>
-    <script type="text/javascript">
-        function checkForm() {
-            var formEmail = document.myForm.email;
-            if (formEmail.value.indexOf("@") == -1 || formEmail.value.indexOf(".") == -1) {
-                alert("please enter  a valid e-mail address.");
-                formEmail.focus();
-                return;
-            }
-        }
+    <script type="text/javascript" src="themes/base.js">
     </script>
 </body>
 

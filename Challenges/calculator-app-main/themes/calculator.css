@@ -1,40 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
 :root {
-  /*theme1*/
+  --Dark-grayish-orange: hsl(35, 11%, 61%);
+  --Dark-magenta: hsl(290, 70%, 36%);
+  --Dark-moderate-cyan: hsl(185, 42%, 37%);
+  --Dark-orange: hsl(25, 99%, 27%);
+  --Dark-red: hsl(6, 70%, 34%);
+  --Dark-violet: hsl(281, 89%, 26%);
+  --Desaturated-dark-blue: hsl(225, 21%, 49%);
+  --Desaturated-dark-blue2: hsl(224, 28%, 35%);
+  --Grayish-orange: hsl(28, 16%, 65%);
+  --Grayish-red: hsl(0, 5%, 81%);
+  --Light-gray: hsl(0, 0%, 90%);
+  --Light-grayish-orange: hsl(30, 25%, 89%);
+  --Light-grayish-yellow: hsl(45, 7%, 89%);
+  --Light-yellow: hsl(52, 100%, 62%);
+  --Orange: hsl(25, 98%, 40%);
+  --Pure-cyan: hsl(176, 100%, 44%);
+  --Red: hsl(6, 63%, 50%);
+  --Soft-cyan: hsl(177, 92%, 70%);
+  --Very0-dark-violet: hsl(268, 75%, 9%);
+  --Very-dark-cyan: hsl(185, 58%, 25%);
+  --Very-dark-violet: hsl(268, 71%, 12%);
   --Very-dark-desaturated-blue: hsl(222, 26%, 31%);
   --Very-dark-desaturated-blue2: hsl(223, 31%, 20%);
   --Very-dark-desaturated-blue3: hsl(224, 36%, 15%);
-  --Desaturated-dark-blue: hsl(225, 21%, 49%);
-  --Desaturated-dark-blue2: hsl(224, 28%, 35%);
-  --Red: hsl(6, 63%, 50%);
-  --Dark-red: hsl(6, 70%, 34%);
-  --Light-grayish-orange: hsl(30, 25%, 89%);
-  --Grayish-orange: hsl(28, 16%, 65%);
   --Very-dark-grayish-blue: hsl(221, 14%, 31%);
-  --White: hsl(0, 0, 100%);
-  /*Theme 2*/
-  --Light-gray: hsl(0, 0%, 90%);
-  --Grayish-red: hsl(0, 5%, 81%);
-  --Very-light-gray: hsl(0, 0%, 93%);
-  --Dark-moderate-cyan: hsl(185, 42%, 37%);
-  --Very-dark-cyan: hsl(185, 58%, 25%);
-  --Orange: hsl(25, 98%, 40%);
-  --Dark-orange: hsl(25, 99%, 27%);
-  --Light-grayish-yellow: hsl(45, 7%, 89%);
-  --Dark-grayish-orange: hsl(35, 11%, 61%);
   --Very-dark-grayish-yellow: hsl(60, 10%, 19%);
-  --White: hsl(0, 0, 100%);
-  /*Theme 3*/
-  --Very0-dark-violet: hsl(268, 75%, 9%);
-  --Very-dark-violet: hsl(268, 71%, 12%);
-  --Dark-violet: hsl(281, 89%, 26%);
-  --Vivid-magenta: hsl(285, 91%, 52%);
-  --Pure-cyan: hsl(176, 100%, 44%);
-  --Soft-cyan: hsl(177, 92%, 70%);
-  --Very-dark-violet: hsl(268, 47%, 21%);
-  --Dark-magenta: hsl(290, 70%, 36%);
-  --Light-yellow: hsl(52, 100%, 62%);
   --Very-dark-blue: hsl(198, 20%, 13%);
+  --Very-dark-violet: hsl(268, 47%, 21%);
+  --Very-light-gray: hsl(0, 0%, 93%);
+  --Vivid-magenta: hsl(285, 91%, 52%);
   --White: hsl(0, 0, 100%);
 }
 * {
@@ -47,13 +42,16 @@
 }
 body {
   align-items: center;
-  background-color: var(--Very-dark-desaturated-blue);
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: center;
   max-width: 1440px;
   width: 100%;
+}
+body.active1,
+body {
+  background-color: var(--Very-dark-desaturated-blue);
 }
 .title {
   display: flex;
@@ -84,9 +82,11 @@ body {
 h3 {
   color: #fff;
 }
-
-.control .box {
+.control .box,
+#screen {
   background-color: var(--Very-dark-desaturated-blue3);
+}
+.control .box {
   border-radius: 30px;
   height: 15px;
   margin-left: 3px;
@@ -113,7 +113,6 @@ h3 {
   width: 450px;
 }
 #screen {
-  background-color: var(--Very-dark-desaturated-blue3);
   border: 0;
   border-radius: 7px;
   color: #fff;
@@ -158,11 +157,8 @@ button {
   font-size: 16px;
 }
 .equal {
-  box-shadow: 0px 3px 0px 0px var(--Dark-red);
   background-color: var(--Red);
-}
-body.active1 {
-  background-color: var(--Very-dark-desaturated-blue);
+  box-shadow: 0px 3px 0px 0px var(--Dark-red);
 }
 body.active2 {
   background-color: var(--Very0-dark-violet);
@@ -170,74 +166,63 @@ body.active2 {
 body.active3 {
   background-color: var(--Light-gray);
 }
-body.active1 .button {
+body.active1 .button,
+body.active1 .control .box {
   background-color: var(--Grayish-red);
 }
 body.active1 .toggle h3 {
   color: black;
 }
-body.active2 .toggle h3 {
-  color: var(--Light-yellow);
-}
-body.active1 .control .box {
-  background-color: var(--Grayish-red);
-}
-body.active2 .control .box {
-}
-body.active2 .control #circle {
+body.active2 .control #circle,
+body.active2 .equal {
   background-color: var(--Pure-cyan);
 }
-body.active1 .control #circle {
+body.active1 .control #circle,
+body.active1 .equal {
   background-color: var(--Orange);
 }
-body.active1 .control p {
-  color: #111;
-}
-body.active2 .control p {
-  color: var(--Light-yellow);
-}
+body.active1 .control p,
 body.active1 .right p {
   color: #111;
 }
-body.active2 .right p {
+body.active2 .right p,
+body.active2 #screen,
+body.active2 .control p,
+body.active2 .toggle h3,
+body.active2 button {
   color: var(--Light-yellow);
 }
 body.active1 #screen {
   background-color: var(--Very-light-gray);
   color: #111;
 }
-body.active2 #screen {
-  background-color: var(--Very-dark-violet);
-  color: var(--Light-yellow);
-}
-body.active1 button {
-  box-shadow: 0px 3px 0px 0px var(--Dark-grayish-orange);
-}
-body.active2 button {
-  box-shadow: 0px 3px 0px 0px var(--Very-dark-violet);
-  background-color: var(--Dark-magenta);
-  color: var(--Light-yellow);
-}
-body.active2 .button {
-  background-color: var(--Very-dark-violet);
-}
+body.active1 button,
 body.active1 .reset,
 body.active1 .delete {
   box-shadow: 0px 3px 0px 0px var(--Dark-grayish-orange);
+}
+body.active2 #screen,
+body.active2 button,
+body.active2 .button {
+  background-color: var(--Very-dark-violet);
+}
+body.active2 button {
+  background-color: var(--Dark-magenta);
+}
+body.active1 .reset,
+body.active1 .delete {
   background-color: var(--Dark-moderate-cyan);
 }
 body.active2 .reset,
 body.active2 .delete {
-  box-shadow: 0px 3px 0px 0px var(--Dark-magenta);
   background-color: var(--Dark-violet);
+  box-shadow: 0px 3px 0px 0px var(--Dark-magenta);
   color: #fff;
 }
 body.active1 .equal {
   box-shadow: 0px 3px 0px 0px var(--Dark-orange);
-  background-color: var(--Orange);
 }
 body.active2 .equal {
   box-shadow: 0px 3px 0px 0px var(--Soft-cyan);
-  background-color: var(--Pure-cyan);
   color: #fff;
 }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="clickMe">Click Me!</button>
+    <p><input type="button" value="stop" onclick="stopInterval()" name="" id=""></p>
+    <script>
+        const button = document.querySelector('.clickMe');
+        function handleClick() {
+            console.log('Great Clicking!!');
+        }
+        //register the event handler 
+        button.addEventListener('click', handleClick);
+        // const handler1 = function handleClick() {
+        //     console.log('Great Clicking!!');
+        // }
+        button.addEventListener('click', function () {
+            console.log('Nice Job!!');
+        });
+        // button.addEventListener('click', handler1);
+        const handlers2 = () => { console.log('DONE! time to eat!'); }
+        setTimeout(handlers2, 3000);
+        // execute the above function after complete the time out
+        var interval = setInterval(handlers2, 2000)
+        //increase the count of above function
+        function stopInterval() {
+            clearInterval(interval);
+            console.log('stopped');
+        }
+    </script>
+</body>
+
+</html>
