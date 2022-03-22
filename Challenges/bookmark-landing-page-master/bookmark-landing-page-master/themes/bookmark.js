@@ -43,9 +43,7 @@ function ValidateEmail(input) {
   if (input.value.match(validRegex)) {
     return true;
   } else {
-    // const message = "Please provide a email address!";
     document.getElementById("msg").style.display = "block";
-    // document.getElementsByClassName("mail-box").style.border = "red";
     setTimeout(() => {
       emailMessage.style.display = "none";
     }, 1000);
@@ -53,4 +51,20 @@ function ValidateEmail(input) {
     event.preventDefault();
     return false;
   }
+}
+
+function bookmark() {
+  document.getElementsByClassName("slider")[0].classList.add("active");
+  document.getElementsByClassName("slider")[1].classList.remove("active");
+  document.getElementsByClassName("slider")[2].classList.remove("active");
+}
+function search() {
+  document.getElementsByClassName("slider")[0].classList.remove("active");
+  document.getElementsByClassName("slider")[1].classList.add("active");
+  document.getElementsByClassName("slider")[2].classList.remove("active");
+}
+function share() {
+  document.getElementsByClassName("slider")[0].classList.remove("active");
+  document.getElementsByClassName("slider")[1].classList.remove("active");
+  document.getElementsByClassName("slider")[2].classList.add("active");
 }
