@@ -14,7 +14,7 @@
 .box1 {
   width: 100%;
   height: 800px;
-  background-image: url(../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-desktop.svg);
+  background-image: url(../../Challenges/huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: hsl(193, 100%, 96%);
@@ -32,7 +32,7 @@
   padding: 150px;
   width: 200px;
   height: 80px;
-  background-image: url(../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/logo.svg);
+  background-image: url(../../Challenges/huddle-landing-page-with-alternating-feature-blocks-master/images/logo.svg);
   background-repeat: no-repeat;
   margin: 60px;
 }
@@ -97,7 +97,7 @@
 .desktop-image {
   width: 800px;
   height: 580px;
-  background-image: url("../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-mockups.svg");
+  background-image: url("../../Challenges/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-mockups.svg");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-attachment: fixed; */
@@ -137,7 +137,7 @@
 .grow_together {
   width: 500px;
   height: 400px;
-  background-image: url(../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-grow-together.svg);
+  background-image: url(../../Challenges/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-grow-together.svg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 80px;
@@ -173,7 +173,7 @@
 .flowing {
   width: 500px;
   height: 400px;
-  background-image: url(../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-flowing-conversation.svg);
+  background-image: url(../../Challenges/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-flowing-conversation.svg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 40px;
@@ -181,7 +181,7 @@
 .your_user {
   width: 500px;
   height: 400px;
-  background-image: url(../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-your-users.svg);
+  background-image: url(../../Challenges/huddle-landing-page-with-alternating-feature-blocks-master/images/illustration-your-users.svg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 80px;
@@ -210,21 +210,21 @@
   /* justify-content: space-around; */
 }
 .location {
-  background-image: url(../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/icon-location.svg);
+  background-image: url(../../Challenges/huddle-landing-page-with-alternating-feature-blocks-master/images/icon-location.svg);
   width: 2rem;
   background-repeat: no-repeat;
   height: 2rem;
   margin-right: 20px;
 }
 .phone {
-  background-image: url(../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/icon-phone.svg);
+  background-image: url(../../Challenges/huddle-landing-page-with-alternating-feature-blocks-master/images/icon-phone.svg);
   width: 1rem;
   background-repeat: no-repeat;
   height: 1rem;
   margin-right: 12px;
 }
 .mail {
-  background-image: url(../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/icon-email.svg);
+  background-image: url(../../Challenges/huddle-landing-page-with-alternating-feature-blocks-master/images/icon-email.svg);
   width: 2rem;
   background-repeat: no-repeat;
   height: 1rem;
@@ -237,7 +237,7 @@
 .logo1 {
   width: 250px;
   height: 45px;
-  background-image: url(../../practice/huddle-landing-page-with-alternating-feature-blocks-master/images/logo.svg);
+  background-image: url(../../Challenges/huddle-landing-page-with-alternating-feature-blocks-master/images/logo.svg);
   background-repeat: no-repeat;
   color: white;
   margin: 20px;
