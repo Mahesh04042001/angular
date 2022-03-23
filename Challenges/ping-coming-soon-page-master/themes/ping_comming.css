@@ -149,4 +149,10 @@ p {
 #msg {
   color: var(--Light-Red);
   margin-left: 30px;
+  margin-top: 10px;
+}
+#msg1 {
+  color: green;
+  margin-left: 30px;
+  margin-top: 10px;
 }
