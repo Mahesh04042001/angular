@@ -1,0 +1,78 @@
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+body {
+  color: white;
+  margin: 80px;
+}
+.container {
+  background-color: hsl(0, 0%, 95%);
+  height: 450px;
+  padding: 100px;
+  width: 1000px;
+}
+.sedan {
+  background-color: var(--Bright-orange);
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-left: 60px;
+}
+.suv {
+  background-color: var(--Dark-cyan);
+}
+.luxury {
+  background-color: var(--Very-dark-cyan);
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.sedan,
+.suv,
+.luxury {
+  float: left;
+  height: 450px;
+  width: 280px;
+}
+.sedan span {
+  color: var(--Bright-orange);
+}
+.suv span {
+  color: var(--Very-dark-cyan);
+}
+.luxury span {
+  color: var(--Dark-cyan);
+}
+.sedan span,
+.suv span,
+.luxury span {
+  background-color: white;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 10px;
+}
+
+img {
+  float: left;
+  padding: 30px;
+}
+p {
+  padding: 40px;
+}
+.sedan span:hover {
+  background-color: var(--Bright-orange);
+}
+.suv span:hover {
+  background-color: var(--Dark-cyan);
+}
+.luxury span:hover {
+  background-color: var(--Very-dark-cyan);
+}
+.sedan span:hover,
+.suv span:hover,
+.luxury span:hover {
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}

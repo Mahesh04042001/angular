@@ -12,144 +12,99 @@
 <body>
     <main>
         <div>
-            <div class="img-box"></div>
+            <div class="illustration-box-desktop"></div>
         </div>
         <section>
-            <div class="image">
+            <div class="bg-pattern-desktop">
                 <div class="img-lady"></div>
             </div>
             <div class="content">
                 <div class="heading">FAQ</div>
                 <div>
-                    <div class="align">
+                    <div class="faq">
                         <div>
                             <p>
                                 How many team members can I invite?
                             </p>
                         </div>
                         <div>
-                            <button id="arrow1" onclick="myFunction(id)"></button>
+                            <button id="arrow1" class="arrow1" onclick="myFunction(id)"></button>
                         </div>
                     </div>
-                    <div id="div1">
+                    <div id="ans1" class="ans1">
                         <p>
                             You can invite up to 2 additional users on the Free plan. There is no limit on
                             team members for the Premium plan.
                         </p>
                     </div>
                     <hr>
-                    <div class="align">
+                    <div class="faq">
                         <div>
                             <p>
                                 What is the maximum file upload size?
                             </p>
                         </div>
                         <div>
-                            <button id="arrow2" onclick="myFunction(id)"></button>
+                            <button id="arrow2" class="arrow2" onclick="myFunction(id)"></button>
                         </div>
                     </div>
-                    <div id="div2">
+                    <div id="ans2" class="ans2">
                         <p>
                             No more than 2GB. All files in your account must fit your allotted storage space.
                         </p>
                     </div>
                     <hr>
-                    <div class="align">
+                    <div class="faq">
                         <div>
                             <p>
                                 How do I reset my password?
                             </p>
                         </div>
                         <div>
-                            <button id="arrow3" onclick="myFunction(id)"></button>
+                            <button id="arrow3" class="arrow3" onclick="myFunction(id)"></button>
                         </div>
                     </div>
-                    <div id="div3">
+                    <div id="ans3" class="ans3">
                         <p>
                             Click “Forgot password” from the login page or “Change password” from your profile page.
                             A reset link will be emailed to you.
                         </p>
                     </div>
                     <hr>
-                    <div class="align">
+                    <div class="faq">
                         <div>
                             <p>Can I cancel my subscription?</p>
                         </div>
                         <div>
-                            <button id="arrow4" onclick="myFunction(id)"></button>
+                            <button id="arrow4" class="arrow4" onclick="myFunction(id)"></button>
                         </div>
                     </div>
-                    <div id="div4">
+                    <div id="ans4" class="ans4">
                         <p>
                             Yes! Send us a message and we’ll process your request no questions asked.
                         </p>
                     </div>
                     <hr>
-                    <div class="align">
+                    <div class="faq">
                         <div>
                             <p>
                                 Do you provide additional support?
                             </p>
                         </div>
                         <div>
-                            <button id="arrow5" onclick="myFunction(id)"></button>
+                            <button id="arrow5" class="arrow5" onclick="myFunction(id)"></button>
                         </div>
                     </div>
-                    <div id="div5">
+                    <div id="ans5" class="ans5">
                         <p>
                             Chat and email support is available 24/7. Phone lines are open during normal business hours.
                         </p>
                     </div>
                 </div>
-
             </div>
         </section>
     </main>
-    <script>
-        var input;
-        function myFunction(input) {
-            if (input === "arrow1") {
-                var x = document.getElementById("div1");
-                if (x.style.display === "none") {
-                    x.style.display = "flex";
-                } else {
-                    x.style.display = "none";
-                }
-            }
-            else if (input === "arrow2") {
-                var x = document.getElementById("div2");
-                if (x.style.display === "none") {
-                    x.style.display = "flex";
-                } else {
-                    x.style.display = "none";
-                }
-            }
-            else if (input === "arrow3") {
-                var x = document.getElementById("div3");
-                if (x.style.display === "none") {
-                    x.style.display = "flex";
-                } else {
-                    x.style.display = "none";
-                }
-            }
-            else if (input === "arrow4") {
-                var x = document.getElementById("div4");
-                if (x.style.display === "none") {
-                    x.style.display = "flex";
-                } else {
-                    x.style.display = "none";
-                }
-            }
-            else {
-                var x = document.getElementById("div5");
-                if (x.style.display === "none") {
-                    x.style.display = "flex";
-                } else {
-                    x.style.display = "none";
-                }
-            }
-        }
-    </script>
+    <script src="themes/script.js"></script>
 </body>
 
 </html>

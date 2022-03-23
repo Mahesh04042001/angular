@@ -1,3 +1,8 @@
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+}
 body {
   background-color: hsl(185, 75%, 39%);
   background-image: url(../images/bg-pattern-top.svg);
@@ -7,6 +12,7 @@ body {
   align-content: center;
   background-color: white;
   border-radius: 25px;
+  box-shadow: 1px 5px 10px var(--Dark-grayish-blue);
   height: 85vh;
   justify-content: center;
   margin: 0 auto;
@@ -36,13 +42,12 @@ body {
   background-size: cover;
   border-radius: 55px;
   height: 7rem;
-  margin-left: 170px;
   margin-top: -50px;
   width: 7rem;
 }
 .name,
 .foot p {
-  color: hsl(229, 23%, 23%);
+  color: var(--Very-dark-desaturated-blue);
 }
 .number {
   font-size: x-large;
@@ -99,5 +104,5 @@ h2,
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Dark-grayish-blue);
 }

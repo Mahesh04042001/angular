@@ -12,7 +12,7 @@
 <body>
     <section>
         <div class="head">
-            <div class="logo0"></div>
+            <div class="header-logo"></div>
             <div class="menu">
                 <div class="menu-item">
                     <p>
@@ -31,8 +31,8 @@
                 </div>
             </div>
         </div>
-        <div class="content1">
-            <div class="image1"></div>
+        <div class="after-head">
+            <div class="illustration-intro"></div>
             <div class="left">
                 <div>
                     <h1 id="heading1">
@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="curve-img"></div>
-        <div class="block">
+        <div class="after-curve-img">
             <div class="comp">
                 <div class="mob">
                     <div class="comp-mob"></div>
@@ -98,9 +98,9 @@
             </div>
         </div>
         <div class="content2">
-            <div class="image2"></div>
+            <div class="illustration-stay-productive"></div>
             <div class="part2">
-                <div class="left1">
+                <div class="illustration-stay-productive-left">
                     <div>
                         <h1>
                             Stay productive, wherever you are
@@ -131,10 +131,10 @@
                 </div>
             </div>
         </div>
-        <div class="card1">
+        <div class="card-container">
             <div class="quote-img"></div>
             <div class="card">
-                <div class="text">
+                <div class="card-para">
                     <div class="para">
                         <h2>
                             Fylo has improved our team productivity by an order of magnitude. Since making the switch
@@ -153,7 +153,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="text">
+                <div class="card-para">
                     <div class="para">
                         <h2>
                             Fylo has improved our team productivity by an order of magnitude. Since making the switch
@@ -173,7 +173,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="text">
+                <div class="card-para">
                     <div class="para">
                         <h2>
                             Fylo has improved our team productivity by an order of magnitude. Since making the switch
@@ -195,8 +195,8 @@
                 </div>
             </div>
         </div>
-        <div class="content3">
-            <div class="left2">
+        <div class="banner">
+            <div class="banner-content">
                 <h1>
                     Get early access today
                 </h1>
@@ -205,7 +205,7 @@
                     If you have any questions, our support team would be happy to help you.
                 </p>
             </div>
-            <div class="right2">
+            <div class="form-block">
                 <form action="" name="myForm">
                     <div>
                         <input type="email" name="email" class="mail-box" placeholder="Your email address">
@@ -218,12 +218,12 @@
                 <div id="msg"></div>
             </div>
         </div>
-        <div class="footer3">
-            <div class="last">
+        <div class="footer">
+            <div class="footer-block">
                 <div class="last0">
-                    <div class="logos"></div>
-                    <div class="last1">
-                        <div class="last1_2">
+                    <div class="footer-logo"></div>
+                    <div class="phone-mail-block">
+                        <div class="phone-block">
                             <div class="phone"></div>
                             <div>
                                 <p>
@@ -231,7 +231,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="last1_3">
+                        <div class="mail-block">
                             <div class="mail"></div>
                             <div>
                                 <p>
@@ -241,46 +241,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="last2">
-                    <div class="ho">About</div>
-                    <div class="ho">Jobs</div>
-                    <div class="ho">Press</div>
-                    <div class="ho">Blog</div>
+                <div class="footer-info-block">
+                    <div class="footer-info">About</div>
+                    <div class="footer-info">Jobs</div>
+                    <div class="footer-info">Press</div>
+                    <div class="footer-info">Blog</div>
                 </div>
-                <div class="last3">
-                    <div class="ho">Cantact Us</div>
-                    <div class="ho">Terms</div>
-                    <div class="ho">Privacy</div>
+                <div class="footer-info-block">
+                    <div class="footer-info">Cantact Us</div>
+                    <div class="footer-info">Terms</div>
+                    <div class="footer-info">Privacy</div>
                 </div>
-                <div class="last4">
+                <div class="social-media">
                     <div class="fb"></div>
                     <div class="tw"></div>
                     <div class="in"></div>
                 </div>
             </div>
-            <div class="footer1">
-                <p>
-                    &copy;Copyright 2018 Huddle. All rights reserved
-                </p>
-            </div>
         </div>
     </section>
-    <script>
-        function ValidateEmail(input) {
-            var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-            if (input.value.match(validRegex)) {
-                return true;
-            } else {
-                const message = "Please provide a valid email address!";
-                document.getElementById('msg').innerHTML = message;
-                setTimeout(() => {
-                    emailMessage.style.display = 'none';
-                }, 1000);
-                document.myForm.email.focus();
-                event.preventDefault();
-                return false;
-            }
-        }
+    <script src="themes/script.js">
+
     </script>
 </body>
 

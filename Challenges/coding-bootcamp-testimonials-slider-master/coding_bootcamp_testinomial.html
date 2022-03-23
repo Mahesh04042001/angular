@@ -7,12 +7,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
     <link rel="stylesheet" href="./themes/coding_bootcamp.css">
-    <link rel="stylesheet" href="<link rel=" preconnect href="https://fonts.googleapis.com"">
+    <link rel="stylesheet" href="link rel=" preconnect href="https://fonts.googleapis.com">
     <link rel=" preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Barlow&family=Barlow+Condensed:wght@400;700&family=Inter:wght@300;500;700&family=Josefin+Sans:wght@300;400;600&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Poppins:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    </style>
 </head>
 
 <body>
@@ -67,31 +63,7 @@
         </div>
         <div class="curve"></div>
     </section>
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
+    <script src="themes/script.js"></script>
 </body>
 
 </html>

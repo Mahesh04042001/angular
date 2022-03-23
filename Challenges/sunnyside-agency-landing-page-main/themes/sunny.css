@@ -16,8 +16,8 @@
 }
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 body {
   font-family: "Barlow", sans-serif;
@@ -31,9 +31,6 @@ section {
 }
 .img-header {
   background-image: url(../images/desktop/image-header.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   height: 700px;
   padding-top: 20px;
   width: 100%;
@@ -64,7 +61,6 @@ section {
   font-family: "Fraunces", serif;
   font-size: 40px;
 }
-
 .para,
 .testinomial-heading,
 .emily,
@@ -90,12 +86,10 @@ section {
   line-height: 25px;
 }
 .button {
-  border-style: none;
   border-bottom: 3px solid var(--Yellow);
-  font-family: "Fraunces", serif;
-  font-weight: bold;
+  border-style: none;
   color: var(--Very-dark-desaturated-blue);
-  text-transform: uppercase;
+  font-family: "Fraunces", serif;
   margin-left: -300px;
 }
 .arrow {
@@ -110,11 +104,15 @@ li {
 }
 a:hover,
 button:hover {
-  font-weight: bold;
   background-color: var(--White);
   border-radius: 20px;
   color: var(--Very-dark-desaturated-blue);
   padding: 10px;
+}
+a:hover,
+button:hover,
+.button {
+  font-weight: bold;
   text-transform: uppercase;
 }
 a {
@@ -127,27 +125,36 @@ a {
 .text-egg,
 .cup-text,
 .members-block {
-  display: flex;
   height: 600px;
   width: 100%;
 }
 .text-egg-left-block,
 .cup-text-right-block {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   font-weight: bolder;
-  justify-content: center;
-  justify-content: space-around;
   padding: 140px;
   width: 50%;
+}
+.text-egg-left-block,
+.cup-text-right-block,
+.members-block {
+  align-items: center;
+  justify-content: center;
+}
+.text-egg-left-block,
+.cup-text-right-block,
+.emily,
+.thomas,
+.jennie,
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .egg-img {
   height: 600px;
   width: 100%;
 }
 .cherry-orange {
-  display: flex;
   height: 100%;
   padding-left: 1px;
   width: 100%;
@@ -165,18 +172,22 @@ a {
 }
 .cherry,
 .orange {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   height: 100%;
   margin-top: -100px;
   padding: 150px;
   text-align: center;
 }
+.cherry,
+.orange,
+.img-header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .cherry-heading,
 .orange-heading {
-  margin-top: 250px;
   margin-bottom: 40px;
+  margin-top: 250px;
 }
 .cherry-heading,
 .cherry-para {
@@ -193,8 +204,6 @@ a {
   text-transform: uppercase;
 }
 .members-block {
-  align-items: center;
-  justify-content: center;
   justify-content: space-around;
   margin-left: 10px;
   padding-right: 40px;
@@ -211,25 +220,25 @@ a {
 .thomas,
 .jennie,
 .footer {
-  display: flex;
-  flex-direction: column;
   height: 400px;
-  justify-content: space-around;
   text-align: center;
   width: 100%;
 }
-.footer-img {
+.footer-img,
+.cherry-orange,
+.text-egg,
+.cup-text,
+.members-block {
   display: flex;
 }
 .footer-img1 {
-  width: 350px;
   height: 400px;
+  width: 350px;
 }
 .footer {
   background-color: var(--Dark-moderate-cyan);
   padding-top: 50px;
 }
-
 .footer a {
   color: var(--Dark-desaturated-cyan);
   font-weight: bold;

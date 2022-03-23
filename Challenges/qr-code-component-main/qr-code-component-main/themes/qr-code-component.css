@@ -1,7 +1,7 @@
 body {
   background-color: hsl(220, 15%, 55%);
 }
-#div1 {
+.qr-container {
   background-color: white;
   border: solid white;
   border-radius: 20px;
@@ -28,7 +28,7 @@ p {
   margin: 25px;
 }
 p,
-#div1,
+.qr-container,
 img {
   text-align: center;
 }

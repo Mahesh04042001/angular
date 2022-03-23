@@ -1,10 +1,19 @@
-const formEmail = document.myForm.email;
-function checkForm() {
-  if (
-    formEmail.value.indexOf("@") == -1 ||
-    formEmail.value.indexOf(".") == -1
-  ) {
-    alert("please enter  a valid e-mail address.");
-    formEmail.focus();
+const error1 = document.querySelector(".icon-error");
+const msg1 = document.querySelector("#msg1");
+const message = "Please provide a email address!";
+function ValidateEmail(input) {
+  var validRegex =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  if (input.value.match(validRegex)) {
+    msg1.style.display = "block";
+    error1.style.display = "none";
+    document.getElementById("msg").innerHTML = message;
+    msg.style.display = "none";
+    return true;
+  } else {
+    document.getElementById("msg").innerHTML = message;
+    error1.style.display = "block";
+    msg.style.display = "block";
+    document.myForm.email.focus();
   }
 }

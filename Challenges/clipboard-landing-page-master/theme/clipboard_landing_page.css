@@ -5,13 +5,13 @@
   --Strong-Cyan: hsl(171, 66%, 44%);
 }
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 body {
-  font-size: 18px;
   font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
 }
 .bg-img,
 .section {
@@ -19,8 +19,8 @@ body {
 }
 .bg-img {
   background-image: url(../images/bg-header-desktop.png);
-  width: 100%;
   height: 250px;
+  width: 100%;
 }
 .bg-img,
 .mobile {
@@ -33,8 +33,8 @@ body {
   align-items: center;
 }
 .logo {
-  width: 5rem;
   height: 5rem;
+  width: 5rem;
 }
 .logo,
 .mobile,
@@ -47,36 +47,36 @@ body {
   flex-direction: column;
 }
 .para1 {
+  color: var(--Grayish-Blue);
   margin-top: 20px;
   width: 600px;
-  color: var(--Grayish-Blue);
 }
 .button-horizontal {
-  width: 450px;
   height: 70px;
+  width: 450px;
 }
 .buttons {
-  margin-top: 30px;
   color: var(--Dark-Grayish-Blue);
+  margin-top: 30px;
 }
 .button-horizontal p {
   border-radius: 90px;
-  padding: 15px;
   font-family: "Bai Jamjuree", sans-serif;
+  padding: 15px;
 }
 .button1 {
+  background-color: var(--Strong-Cyan);
   margin-left: 20px;
   margin-right: 50px;
-  background-color: var(--Strong-Cyan);
   text-decoration: none;
 }
 .button1:hover,
 .button2:hover {
-  cursor: pointer;
   border: solid 2px blue;
+  cursor: pointer;
 }
 .flex2_1:hover,
-.flex3:hover,
+.install:hover,
 .fb:hover,
 .in:hover,
 .tw:hover {
@@ -92,10 +92,10 @@ body {
   margin-top: 50px;
 }
 .para2 {
+  color: var(--Grayish-Blue);
+  font-size: 16px;
   margin-top: 20px;
   width: 600px;
-  font-size: 16px;
-  color: var(--Grayish-Blue);
 }
 .desktop {
   display: flex;
@@ -103,16 +103,16 @@ body {
   margin-top: 60px;
 }
 .desktop-img {
-  width: 550px;
   height: 400px;
+  width: 550px;
 }
 .content-box {
-  width: 350px;
   height: 400px;
   justify-content: space-around;
-  margin: 70px;
-  margin-top: 20px;
   margin-left: 200px;
+  margin-top: 20px;
+  margin: 70px;
+  width: 350px;
 }
 .content-box_top,
 .content-box_middle,
@@ -135,27 +135,27 @@ h3 {
 .para5-1,
 .para5-2,
 .para5-3 {
+  color: var(--Grayish-Blue);
   font-size: 15px;
   margin-top: 10px;
-  color: var(--Grayish-Blue);
 }
 .mobile {
   margin-top: 60px;
 }
 .mobile-img {
-  width: 600px;
   height: 400px;
+  width: 600px;
 }
 .content-box1 {
-  width: 500px;
   height: 200px;
+  width: 500px;
 }
 .after-mobile {
   display: flex;
   flex-direction: row;
-  margin-top: 30px;
   justify-content: space-around;
   margin-top: 100px;
+  margin-top: 30px;
 }
 .text-img {
   width: 3.6rem;
@@ -167,22 +167,21 @@ h3 {
 .black-img {
   width: 4rem;
 }
-
 .preview-img {
-  width: 6rem;
   height: 3.5rem;
+  width: 6rem;
 }
 .preview-icons,
 .black-icons,
 .text-icons {
-  width: 200px;
+  align-items: center;
   height: 200px;
   text-align: center;
-  align-items: center;
+  width: 200px;
 }
-.flex1,
-.flex2,
-.flex3,
+.faq-column,
+.privacy-column,
+.install,
 .preview-icons,
 .text-icons {
   display: flex;
@@ -190,35 +189,35 @@ h3 {
   justify-content: space-between;
 }
 .icons {
-  margin-top: 100px;
   margin-bottom: 100px;
+  margin-top: 100px;
 }
 .icons,
-.footer1,
+.footer,
 .button-horizontal {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 .google {
-  width: 14rem;
   height: 4rem;
+  width: 14rem;
 }
 .ibm {
-  width: 11rem;
   height: 4rem;
+  width: 11rem;
 }
 .micro {
-  width: 14rem;
   height: 3rem;
+  width: 14rem;
 }
 .hp {
-  width: 15rem;
   height: 6rem;
+  width: 15rem;
 }
 .vg {
-  width: 20rem;
   height: 4.8rem;
+  width: 20rem;
 }
 .google,
 .ibm,
@@ -236,48 +235,48 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.footer1 {
+.footer {
   background-color: var(--Grayish-Blue);
-  height: 150px;
   color: var(--Dark-Grayish-Blue);
+  height: 150px;
 }
 .logo1 {
-  width: 3rem;
-  height: 3rem;
   display: flex;
+  height: 3rem;
+  width: 3rem;
 }
-.footer1-1,
+.footer-content-left,
 .social-media {
   display: flex;
   flex-direction: row;
   margin-top: 30px;
 }
-.footer1-1 {
+.footer-content-left {
   justify-content: space-between;
 }
-.footer1 ul li {
+.footer ul li {
   list-style: none;
 }
-.flex1,
-.flex2,
-.flex3 {
-  margin-left: 70px;
+.faq-column,
+.privacy-column,
+.install {
   margin-bottom: 40px;
+  margin-left: 70px;
 }
-.flex1 div,
-.flex2 div,
-.flex3 p {
+.faq-column div,
+.privacy-column div,
+.install p {
+  padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 10px;
 }
 .fb,
 .tw,
 .in {
-  width: 2rem;
-  height: 2rem;
   background-repeat: no-repeat;
+  height: 2rem;
   padding: 20px;
+  width: 2rem;
 }
 .fb {
   background-image: url("../images/icon-facebook.svg");
@@ -288,15 +287,14 @@ h3 {
 .in {
   background-image: url("../images/icon-instagram.svg");
 }
-.flex2-1:hover {
+.footer-info:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 .fb:hover,
 .tw:hover,
 .in:hover {
-  box-shadow: 2px 5px 2px white;
-  border-radius: 50%;
   background-color: yellow;
-  margin-top: -10px;
+  border: 2px solid white;
+  border-radius: 100%;
 }

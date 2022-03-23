@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="./themes/ping_comming.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Josefin+Sans:wght@300;400;600&family=Libre+Franklin:wght@300;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+
 </head>
 
 <body>
@@ -26,7 +24,7 @@
                         </span>soon!
                     </h1>
                 </div>
-                <div class="sub">
+                <div class="subscribe">
                     <p>Subscribe and get notified</p>
                 </div>
             </div>
@@ -55,23 +53,7 @@
             </div>
         </section>
     </main>
-    <script>
-        function ValidateEmail(input) {
-            var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-            if (input.value.match(validRegex)) {
-                return true;
-            } else {
-                const message = "Please provide a email address!";
-                document.getElementById('msg').innerHTML = message;
-                setTimeout(() => {
-                    emailMessage.style.display = 'none';
-                }, 1000);
-                document.myForm.email.focus();
-                event.preventDefault();
-                return false;
-            }
-        }
-    </script>
+    <script src="themes/script.js"></script>
 </body>
 
 </html>

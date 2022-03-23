@@ -1,10 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+:root {
+  --Dark-Blue: hsl(240, 38%, 20%);
+  --Grayish-Blue: hsl(240, 18%, 77%);
+}
 * {
   margin: 0;
   padding: o;
   box-sizing: border-box;
 }
 body {
-  font-family: Verdana, sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
   max-height: 657px;
   overflow-y: hidden;
@@ -12,8 +17,6 @@ body {
 .mySlides {
   display: none;
   width: 1000px;
-  display: flex;
-  flex-direction: row;
 }
 img {
   vertical-align: middle;
@@ -25,7 +28,6 @@ img {
   height: 450px;
   position: relative;
   margin: auto;
-  display: flex;
   margin-top: 250px;
 }
 .prev,
@@ -38,8 +40,7 @@ img {
   color: black;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.6s ease;
-  user-select: none;
+  transition: 0.6s;
 }
 .arrow a {
   margin-top: 140px;
@@ -56,7 +57,7 @@ img {
 .prev:hover,
 .next:hover {
   background-color: white;
-  color: hsl(240, 18%, 77%);
+  color: var(--Grayish-Blue);
 }
 .text {
   color: #f2f2f2;
@@ -82,43 +83,14 @@ img {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: 0.6s;
 }
 .active,
 .dot:hover {
   background-color: #717171;
 }
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-}
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@media only screen and (max-width: 300px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 11px;
-  }
 }
 .quote-img {
   width: 10rem;
@@ -126,18 +98,20 @@ img {
   margin-top: -60px;
   margin-left: 60px;
   background-image: url(../images/pattern-quotes.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
 }
 .text {
   width: 480px;
   margin-top: -100px;
   height: 300px;
-  display: flex;
   flex-direction: column;
   text-align: left;
   margin-left: 80px;
+}
+.text,
+.fade,
+.mySlides,
+.slideshow-container {
+  display: flex;
 }
 .curve {
   width: 800px;
@@ -150,26 +124,31 @@ img {
   width: 700px;
   height: 500px;
   background-image: url(../images/pattern-bg.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
   margin-left: 630px;
   margin-top: -40px;
-  position: absolute;
 }
 section {
   margin-top: -200px;
 }
+.back-img,
+.quote-img {
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
 .para p {
   margin-top: 40px;
   font-family: "Inter", sans-serif;
-  color: hsl(240, 18%, 77%);
+  color: var(--Grayish-Blue);
 }
 q {
   font-family: "Inter", sans-serif;
-  color: hsl(240, 38%, 20%);
   font-weight: lighter;
 }
 span {
   font-weight: bolder;
-  color: hsl(240, 38%, 20%);
+}
+span,
+q {
+  color: var(--Dark-Blue);
 }

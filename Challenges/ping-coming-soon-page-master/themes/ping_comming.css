@@ -1,134 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --Gray: hsl(0, 0%, 59%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 main {
   display: flex;
   justify-content: center;
 }
 section {
-  width: 700px;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  justify-content: center;
+  width: 700px;
 }
 .header {
-  height: 200px;
+  align-items: center;
+  color: var(--Very-Dark-Blue);
   display: flex;
   flex-direction: column;
+  height: 200px;
   justify-content: center;
-  align-items: center;
-  color: hsl(209, 33%, 12%);
   justify-content: space-between;
 }
 h1 {
-  font-size: 40px;
   font-family: "Libre Franklin", sans-serif;
+  font-size: 40px;
   margin-top: -50px;
 }
 .header p {
-  margin-top: -70px;
-  font-size: 20px;
   font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
   font-weight: 600;
+  margin-top: -70px;
 }
 .logo {
-  width: 6rem;
-  height: 2rem;
   background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
+  height: 2rem;
+  width: 6rem;
+}
+.header span {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 300;
 }
 .header span,
 p {
-  color: hsl(0, 0%, 59%);
+  color: var(--Gray);
 }
 .mail {
-  width: 500px;
   display: flex;
   flex-direction: column;
+  width: 500px;
 }
 .mail form {
-  margin-top: -30px;
-
-  width: 500px;
   display: flex;
   justify-content: space-around;
+  margin-top: -30px;
+  width: 500px;
 }
 .mail-box,
 .button {
-  padding: 10px;
   border-radius: 20px;
   border-style: none;
+  padding: 10px;
   text-align: center;
 }
 .mail-box {
+  border: 1px solid var(--Gray);
+  color: black;
   padding-right: 100px;
-  border: 1px solid hsl(223, 100%, 88%);
-  color: hsl(223, 100%, 88%);
 }
 .button {
+  background-color: var(--Blue);
+  color: white;
   padding-left: 40px;
   padding-right: 40px;
-  background-color: hsl(223, 87%, 63%);
   text-align: center;
-  color: white;
 }
 .button:hover {
-  box-shadow: 5px 5px 10px hsl(223, 87%, 63%);
+  box-shadow: 5px 5px 10px var(--Blue);
 }
 .image {
+  background-image: url(../images/illustration-dashboard.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
   margin-top: 50px;
   width: 70%;
-  height: 300px;
-  background-image: url(../images/illustration-dashboard.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 .social-media {
-  margin-top: 50px;
-  width: 100px;
   display: flex;
   justify-content: center;
   justify-content: space-around;
+  margin-top: 50px;
+  width: 100px;
 }
 .fb,
 .tw,
 .in {
-  width: 1rem;
   height: 1rem;
+  width: 1rem;
 }
-.fb,
-:hover .tw,
-:hover .in:hover {
+.fb:hover,
+.tw:hover,
+.in:hover {
+  background-color: var(--Blue);
+  border-radius: 100%;
   cursor: pointer;
+  padding: 10px;
 }
 .fb {
-  background-image: url(../images/logo-facebook.svg);
+  background-image: url(../../../images/logo-facebook.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .tw {
-  background-image: url(../images/logo-twitter.svg);
+  background-image: url(../../../images/logo-twitter.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .in {
-  background-image: url(../images/logo-instagram.svg);
+  background-image: url(../../../images/logo-instagram.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .foot {
-  margin-top: 20px;
   font-size: small;
+  margin-top: 20px;
 }
 #msg {
+  color: var(--Light-Red);
   margin-left: 30px;
-  color: hsl(354, 100%, 66%);
 }

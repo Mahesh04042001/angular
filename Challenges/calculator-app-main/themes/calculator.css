@@ -101,7 +101,6 @@ h3 {
   position: absolute;
   top: 0;
   width: 15px;
-  z-index: 1;
 }
 .control p {
   color: #fff;

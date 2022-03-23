@@ -18,13 +18,13 @@ body {
 section {
   width: 100vw;
 }
-.box {
+.container {
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 100%;
 }
-.box1 {
+.header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 1600px;
@@ -37,12 +37,12 @@ section {
 h1 {
   font-family: "Poppins", sans-serif;
 }
-.banner .border1,
-.border3,
-.border4,
-.foot,
+.banner .grow-together-box,
+.flowing-box,
+.your-user-content-box,
+.desktop-image-block,
 .head,
-.last4,
+.your-user-content,
 .no-left {
   justify-content: space-between;
 }
@@ -64,44 +64,42 @@ h1 {
   margin: 40px;
   font-weight: bold;
 }
-.foot,
-.left,
-.middile,
-.middile4,
+.desktop-image-block,
+.desktop-image-block-content,
+.grow-together-block,
+.your-user-block,
 .no-left {
   display: flex;
   flex-direction: column;
 }
-.foot,
-.left {
+.desktop-image-block,
+.desktop-image-block-content {
   justify-content: center;
   align-items: center;
 }
-.foot {
+.desktop-image-block {
   height: 1000px;
   width: 100%;
 }
-.left {
+.desktop-image-block-content {
   padding-top: 70px 0px 0px 60px;
   width: 900px;
 }
-#heading1,
-#heading2,
-#heading3,
-#heading4 {
+.heading,
+.your-user-heading {
   color: var(--Very-Dark-Cyan);
   font-size: 40px;
   padding-bottom: 30px;
 }
-#para1,
-#para2,
-#para3,
-#para4 {
+.para1,
+.para2,
+.para3,
+.para4 {
   color: var(--Very-Dark-Cyan);
   font-size: larger;
   padding-bottom: 80px;
 }
-#para1 {
+.para1 {
   color: var(--Very-Dark-Cyan);
   text-align: center;
   width: 500px;
@@ -113,7 +111,7 @@ h1 {
   padding: 20px 60px;
 }
 .desktop-image {
-  background-image: url("../images/illustration-mockups.svg");
+  background-image: url(../images/screen-mockups.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 580px;
@@ -124,7 +122,7 @@ h1 {
 .number {
   height: 500px;
   justify-content: space-around;
-  margin-top: -530px;
+  margin-top: 100px;
 }
 .number p {
   color: var(--Very-Dark-Cyan);
@@ -143,8 +141,8 @@ h1 {
   height: 3rem;
   width: 3rem;
 }
-.middile,
-.middile4 {
+.grow-together-block,
+.your-user-block {
   height: 900px;
   justify-content: space-around;
   width: 100%;
@@ -156,29 +154,29 @@ h1 {
   height: 300px;
   width: 100%;
 }
-.border1,
-.border3,
-.border4,
+.grow-together-box,
+.flowing-box,
+.your-user-content-box,
 .head,
-.last1-1,
-.last1-2,
-.last1-3,
-.last4,
-.middile3,
+.lorem-block-1,
+.lorem-block-2,
+.mail-box,
+.your-user-content,
+.flowing,
 .number {
   display: flex;
   flex-direction: row;
 }
-.border1,
-.border4 {
+.grow-together-box,
+.your-user-content-box {
   background-color: var(--Very-Pale-Blue);
 
   height: 500px;
   margin-top: -160px;
   padding: 20px;
 }
-.left1,
-.left4 {
+.grow-together-content,
+.your-user-content {
   display: flex;
   flex-direction: column;
   height: 400px;
@@ -194,28 +192,28 @@ h1 {
   margin-left: 80px;
   width: 500px;
 }
-.drk-curve1 {
+.drk-curve-bottom {
   background-image: url(../images/bg-section-bottom-desktop-1.svg);
   height: 300px;
   width: 100%;
 }
-.middile3 {
+.flowing-img {
   height: 600px;
   justify-content: space-around;
   width: 100%;
 }
-.border3 {
+.flowing-box {
   height: 500px;
   margin-top: 40px;
   padding: 20px;
 }
-.flowing {
+.flowing-img {
   background-image: url(../images/illustration-flowing-conversation.svg);
   height: 400px;
   margin-left: 40px;
   width: 500px;
 }
-.left3 {
+.flowing-box-content {
   display: flex;
   flex-direction: column;
   height: 400px;
@@ -223,15 +221,14 @@ h1 {
   margin-left: 80px;
   width: 600px;
 }
-.drk-curve2 {
+.your-user-curve {
   background-image: url(../images/bg-section-top-desktop-2.svg);
   height: 300px;
   width: 100%;
 }
-.last4 {
+.your-user-content {
   height: 100px;
   margin: 100px;
-  width: 300px;
 }
 .your-user {
   background-image: url(../images/illustration-your-users.svg);
@@ -241,7 +238,7 @@ h1 {
   margin-left: 80px;
   width: 500px;
 }
-.drk-curve3 {
+.your-user-curve-bottom {
   background-image: url(../images/bg-section-bottom-desktop-2.svg);
   height: 300px;
   width: 100%;
@@ -258,62 +255,63 @@ h1 {
 .footer {
   background-color: var(--Very-Dark-Cyan);
   color: var(--Very-Pale-Blue);
-  height: 355px;
+  height: 3-img55px;
   justify-content: flex-end;
   margin-top: -150px;
   padding: 30px;
   width: 100%;
 }
-.drk-curve2,
-.drk-curve3,
-.drk-curve4,
-.drk-curve1,
-.flowing,
-.logo1,
+.your-user-curve,
+.your-user-curve-bottom,
+.footer-curve,
+.drk-curve-bottom,
+.flowing-img,
+.footer-logo,
 .no-img,
 .no-img1 {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.drk-curve4 {
+.footer-curve {
   background-image: url(../images/bg-footer-top-desktop.svg);
   height: 300px;
   margin-top: 50px;
 }
-.last {
+.footer-box {
   display: flex;
   flex-direction: row;
   height: 315px;
   justify-content: baseline;
   margin-top: 100px;
+  padding-bottom: 40px;
   width: 1200px;
 }
 .banner,
 .footer,
-.last0 {
+.footer-box-left {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.logo1 {
+.footer-logo {
   background-color: var(--Very-Pale-Blue);
   background-image: url(../images/logo.svg);
   height: 3rem;
   margin: 50px;
   width: 12rem;
 }
-.last1 {
+.lorem-block {
   display: flex;
   flex-direction: column;
   height: 150px;
   width: 400px;
 }
-.last1-1,
-.last1-2,
-.last1-3 {
+.lorem,
+.phone-block,
+.mail-box {
   margin: 20px;
 }
-.last1 p {
+.lorem-block p {
   color: var(--container-box-shadow);
 }
 .phone,
@@ -326,7 +324,7 @@ h1 {
   margin-right: 12px;
   width: 1rem;
 }
-.last1-3 p {
+.mail-box p {
   margin-top: -20px;
 }
 .mail {
@@ -334,10 +332,10 @@ h1 {
   margin-top: -20px;
   width: 2rem;
 }
-.last2 {
+.newsletter {
   margin-left: 50px;
 }
-.last2,
+.newsletter,
 .last3 {
   color: var(--container-box-shadow);
   display: flex;
@@ -357,18 +355,18 @@ h1 {
   text-align: center;
   margin-top: 30px;
 }
-.button0 {
+.subs-button {
   background-color: var(--Light-Pink);
   border-radius: 60px;
   color: var(--Very-Pale-Blue);
   padding: 10px 60px;
   margin: 20px 0px 0px 10px;
 }
-.logo1:hover {
+.footer-logo:hover {
   cursor: pointer;
 }
 .button:hover,
-.button0:hover,
+.subs-button:hover,
 .fb:hover,
 .in:hover,
 .try:hover,
@@ -377,7 +375,8 @@ h1 {
   cursor: pointer;
   color: black;
 }
-.cur {
+.curve {
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
 }

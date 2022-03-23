@@ -17,21 +17,23 @@
 <body>
     <main>
         <section>
-            <div class="image"></div>
+            <div class="main-image"></div>
             <div class="right">
                 <div class="heading">
-                    <h1>Shift the overall look and feel by adding these wonderful
+                    <h1>
+                        Shift the overall look and feel by adding these wonderful
                         touches to furniture in your home
                     </h1>
                 </div>
                 <div class="para">
-                    <p>Ever been in a room and felt like something was missing? Perhaps
+                    <p>
+                        Ever been in a room and felt like something was missing? Perhaps
                         it felt slightly bare and uninviting. I’ve got some simple tips
                         to help you make any room feel complete.
                     </p>
                 </div>
-                <div class="foot">
-                    <div class="foot-content">
+                <div class="footer">
+                    <div class="footer-content">
                         <div class="img"></div>
                         <div class="content">
                             <div class="name">
@@ -43,7 +45,7 @@
                         </div>
                     </div>
                     <div class="share">
-                        <div id="popup">
+                        <div id="popup" class="popup">
                             <div class="share1">
                                 <p>share</p>
                             </div>
@@ -51,21 +53,15 @@
                             <div class="tw"></div>
                             <div class="pin"></div>
                         </div>
-                        <div><button id="shr"></button></div>
+                        <div>
+                            <button id="share" class="share-button"></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <script>
-        var myInput = document.getElementById("shr");
-        myInput.onfocus = function () {
-            document.getElementById("popup").style.display = "flex";
-        }
-        myInput.onblur = function () {
-            document.getElementById("popup").style.display = "none";
-        }
-    </script>
+    <script src="themes/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,123 @@
+:root {
+  --container-box-shadow: -2px 10px 24px -1px hsl(208, 11%, 55%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(../images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top {
+  height: 800px;
+  width: 100%;
+}
+.head {
+  height: 200px;
+}
+.head,
+.desktop-image-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.logo {
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  height: 80px;
+  margin: 60px;
+  padding: 150px;
+  width: 200px;
+}
+.try {
+  background-color: white;
+  border-radius: 30px;
+  color: hsl(192, 100%, 9%);
+  font-size: 20px;
+  font-weight: bold;
+  height: 70px;
+  margin: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding: 20px;
+}
+.desktop-image-block {
+  height: 580px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+  padding-top: 70px;
+  width: 500px;
+}
+.heading {
+  color: white;
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+.para {
+  color: gainsboro;
+  font-size: larger;
+  padding-bottom: 80px;
+}
+.button {
+  background-color: white;
+  border-radius: 60px;
+  color: hsl(257, 40%, 49%);
+  padding-left: 80px;
+  padding-right: 80px;
+  padding: 10px;
+}
+.desktop-image {
+  background-image: url(../images/illustration-mockups.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 580px;
+  margin-left: 60px;
+  width: 800px;
+}
+.footer {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  height: 10px;
+  justify-content: space-around;
+  margin-top: 30px;
+  padding-left: 1100px;
+  padding-right: 50px;
+  width: 100%;
+}
+.fb {
+  background-image: url("../../../images/logo-facebook.svg");
+}
+.tw {
+  background-image: url("../../../images/logo-twitter.svg");
+}
+.in {
+  background-image: url("../../../images/logo-instagram.svg");
+}
+.fb,
+.tw,
+.in {
+  background-repeat: no-repeat;
+  height: 2rem;
+  width: 2rem;
+}
+.fb:hover,
+.tw:hover,
+.in:hover {
+  border-radius: 100%;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: hsl(257, 40%, 49%);
+  border: 2px solid white;
+  color: white;
+}
