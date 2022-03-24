@@ -82,6 +82,7 @@ p {
 .mail-box {
   border: 1px solid var(--Gray);
   color: black;
+  outline: none;
   padding-right: 100px;
 }
 .button {

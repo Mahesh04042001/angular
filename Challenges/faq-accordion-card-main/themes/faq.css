@@ -76,14 +76,11 @@ section,
 .faq {
   display: flex;
 }
-.arrow1,
-.arrow2,
-.arrow3,
-.arrow4,
-.arrow5 {
+.arrow {
   background-image: url(../images/icon-arrow-down.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  cursor: pointer;
   height: 1rem;
   width: 1rem;
 }

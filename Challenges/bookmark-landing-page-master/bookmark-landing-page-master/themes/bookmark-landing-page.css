@@ -57,6 +57,11 @@ p,
   outline: none;
   padding: 10px 15px;
 }
+.content-button:hover {
+  border-radius: 7px;
+  box-shadow: 1px 5px 10px var(--Very-Dark-Blue);
+  padding: 10px;
+}
 .slider-box-content button {
   border-style: none;
   outline: none;
@@ -75,6 +80,12 @@ h3,
   background-color: var(--Soft-Blue);
   color: white;
   cursor: pointer;
+}
+.blue-button:hover {
+  box-shadow: 2px 5px 10px var(--Very-Dark-Blue);
+}
+.bkmark-left button:hover {
+  box-shadow: 1px 3px 10px var(--Very-Dark-Blue);
 }
 .bkmark-manager {
   margin-top: 100px;
@@ -108,7 +119,6 @@ h3,
   opacity: 0.99;
   width: 500px;
 }
-
 .sliding-menu button {
   background-color: white;
   color: var(--Grayish-Blue);
@@ -118,6 +128,7 @@ h3,
 }
 .sliding-menu button:hover {
   border-bottom: 3px solid var(--Soft-Red);
+  color: var(--Very-Dark-Blue);
   cursor: pointer;
 }
 .sliding-part {
@@ -129,7 +140,7 @@ h3,
   left: 0;
   position: absolute;
   right: 0;
-  transition: 0.5s;
+  transition: 0s ease;
   visibility: hidden;
   width: 1250px;
 }
@@ -258,6 +269,9 @@ section {
   display: flex;
   justify-content: space-between;
 }
+.faq p {
+  color: var(--Very-Dark-Blue);
+}
 .arrow {
   background-image: url(../images/icon-arrow.svg);
   background-repeat: no-repeat;
@@ -266,6 +280,17 @@ section {
   height: 1rem;
   width: 1rem;
 }
+/* .down-arrow {
+  background-image: url(../images/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  display: none;
+  height: 1rem;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  width: 1rem;
+} */
 hr {
   margin-bottom: 10px;
   margin-top: 10px;
@@ -274,7 +299,7 @@ hr {
   color: hsl(240, 6%, 50%);
   display: flex;
   display: none;
-  height: 110px;
+  height: 130px;
   margin-top: 20px;
   text-align: left;
   width: 600px;
@@ -336,7 +361,15 @@ hr {
   border: 1px solid hsl(223, 100%, 88%);
   color: hsl(223, 100%, 88%);
   margin-right: 10px;
+  outline: none;
   padding-right: 100px;
+  position: relative;
+}
+.icon-error {
+  display: none;
+  margin-left: 250px;
+  margin-top: -30px;
+  position: absolute;
 }
 .mail-button {
   padding-left: 30px;
@@ -396,10 +429,13 @@ header .menu-bar a:hover {
   margin-right: 20px;
 }
 .social-media img:hover {
-  border-radius: 20px;
+  border-radius: 100px;
+  background-color: var(--Soft-Red);
   padding: 10px;
 }
 header .menu-bar a:hover {
   color: white;
-  padding: 5px;
+  background-color: var(--Soft-Red);
+  border-radius: 7px;
+  padding: 7px;
 }

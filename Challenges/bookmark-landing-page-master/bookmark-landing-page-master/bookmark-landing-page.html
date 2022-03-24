@@ -158,6 +158,7 @@
                     </div>
                     <div>
                         <button id="arrow1" class="arrow" onclick="myFunction(id)"></button>
+                        <button class="down-arrow"></button>
                     </div>
                 </div>
                 <div id="ans1" class="ans">
@@ -233,9 +234,11 @@
                     Stay up-to-date with what we’re doing
                 </h1>
                 <div class="mail">
-                    <form action="" name="myForm">
+                    <form name="myForm">
                         <div>
-                            <input type="email" name="email" class="mail-box" placeholder="Your email address">
+                            <input type="email" id="mail-id" name="email" class="mail-box"
+                                placeholder="Your email address">
+                            <img src="./images/icon-error.svg" id="error" class="icon-error" alt="icon-error">
                         </div>
                         <div>
                             <input type="submit" value="Contact Us" class="mail-button"

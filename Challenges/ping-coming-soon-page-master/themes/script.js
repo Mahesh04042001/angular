@@ -6,14 +6,15 @@ function ValidateEmail(input) {
     document.getElementById("msg1").innerHTML = message;
     document.getElementById("msg1").style.display = "block";
     document.getElementById("msg").style.display = "none";
+    document.getElementById("mail-id").style.borderColor = "green";
     event.preventDefault();
-
     return true;
   } else {
     const message = "Please provide a email address!";
     document.getElementById("msg").innerHTML = message;
     document.getElementById("msg").style.display = "block";
     document.getElementById("msg1").style.display = "none";
+    document.getElementById("mail-id").style.borderColor = "red";
     document.myForm.email.focus();
     event.preventDefault();
     return false;
