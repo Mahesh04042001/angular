@@ -145,7 +145,6 @@ h3,
   width: 1250px;
 }
 .active {
-  opacity: 1;
   visibility: visible;
 }
 .slider-box {
@@ -317,6 +316,7 @@ hr {
 }
 .footer-mail {
   background-color: var(--Soft-Blue);
+  margin-top: 150px;
 }
 .footer-content {
   flex-direction: column;

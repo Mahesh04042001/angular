@@ -1,4 +1,3 @@
-var input;
 var input1 = document.getElementById("arrow1");
 var input2 = document.getElementById("arrow2");
 var input3 = document.getElementById("arrow3");
@@ -8,7 +7,7 @@ function myFunction(input) {
   if (input === "arrow1") {
     var x = document.getElementById("ans1");
     if (x.style.display === "none") {
-      x.style.display = "flex";
+      x.style.display = "block";
       input1.style.transform = "rotate(180deg)";
     } else {
       x.style.display = "none";
@@ -17,7 +16,7 @@ function myFunction(input) {
   } else if (input === "arrow2") {
     var x = document.getElementById("ans2");
     if (x.style.display === "none") {
-      x.style.display = "flex";
+      x.style.display = "block";
       input2.style.transform = "rotate(180deg)";
     } else {
       x.style.display = "none";
@@ -26,7 +25,7 @@ function myFunction(input) {
   } else if (input === "arrow3") {
     var x = document.getElementById("ans3");
     if (x.style.display === "none") {
-      x.style.display = "flex";
+      x.style.display = "block";
       input3.style.transform = "rotate(180deg)";
     } else {
       x.style.display = "none";
@@ -35,7 +34,7 @@ function myFunction(input) {
   } else if (input === "arrow4") {
     var x = document.getElementById("ans4");
     if (x.style.display === "none") {
-      x.style.display = "flex";
+      x.style.display = "block";
       input4.style.transform = "rotate(180deg)";
     } else {
       x.style.display = "none";
@@ -46,20 +45,12 @@ function myFunction(input) {
 function ValidateEmail(input) {
   var validRegex =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  if (input.value.match(validRegex)) {
-    const message = "Thankyou for your contribution";
-    document.getElementById("msg1").innerHTML = message;
-    document.getElementById("msg1").style.display = "block";
-    document.getElementById("mail-id").style.borderColor = "green";
-    window.onwaiting(event);
-    return true;
-  } else {
+  if (!input.value.match(validRegex)) {
     document.getElementById("msg").style.display = "block";
     document.getElementById("error").style.display = "block";
     document.getElementById("mail-id").style.borderColor = "red";
     document.myForm.email.focus();
     event.preventDefault();
-    return false;
   }
 }
 

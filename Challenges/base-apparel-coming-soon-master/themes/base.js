@@ -10,7 +10,6 @@ function ValidateEmail(input) {
     document.getElementById("msg").innerHTML = message;
     msg.style.display = "none";
     document.getElementById("mail-id").style.borderColor = "green";
-    return true;
   } else {
     document.getElementById("msg").innerHTML = message;
     error1.style.display = "block";
