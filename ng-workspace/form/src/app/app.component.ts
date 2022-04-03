@@ -23,9 +23,6 @@ export class AppComponent {
       this.fg.reset();
       (<HTMLDivElement>document.getElementById("msg")).style.display="none";
     }
-    // else{
-    //   alert("*************Please, must fill the empty fields in the form!!!**********");
-    // }
   }
   search(){
     console.log((<HTMLDivElement>document.getElementById("find")).innerHTML);
@@ -41,6 +38,6 @@ export class AppComponent {
     (<HTMLInputElement>document.getElementById("find")).value="";
   }  
   removefield(){
-    (<HTMLTableRowElement>document.getElementById('tr')).style.display="none";
+    this.searchvalue=[];
   }
 }
