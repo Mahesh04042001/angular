@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,166 +7,40 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // title = 'form';
-  store = [];
-// document.getElementById("add").addEventListener("click", move);
-move() {
-  if (!this.checkEmptyInput()) {
-    document.getElementById("msg").style.display = "none";
-    var fname = document.getElementById("fname").value,
-      lname = document.getElementById("lname").value,
-      dob = document.getElementById("dob").value,
-      gender = document.getElementById("gender").value,
-      city = document.getElementById("city").value,
-      date = document.getElementById("date").value,
-      time = document.getElementById("time").value,
-      lab = document.getElementById("lab").value,
-      report = document.getElementById("report").value,
-      result = document.getElementById("result").value,
-      aadhar = document.getElementById("aadhar").value;
-    store_obj = {
-      firstname: fname,
-      lastname: lname,
-      "date of birth": dob,
-      gender: gender,
-      city: city,
-      date: date,
-      time: time,
-      lab: lab,
-      report: report,
-      result: result,
-      aadhar: aadhar,
-    };
-    this.store.push(store_obj);
-    var newRow = table.insertRow(table.length),
-      cell1 = newRow.insertCell(0),
-      cell2 = newRow.insertCell(1),
-      cell3 = newRow.insertCell(2),
-      cell4 = newRow.insertCell(3),
-      cell5 = newRow.insertCell(4),
-      cell6 = newRow.insertCell(5),
-      cell7 = newRow.insertCell(6),
-      cell8 = newRow.insertCell(7),
-      cell9 = newRow.insertCell(8),
-      cell10 = newRow.insertCell(9),
-      cell11 = newRow.insertCell(10);
-    cell1.innerHTML = store_obj["firstname"];
-    cell2.innerHTML = store_obj["lastname"];
-    cell3.innerHTML = store_obj["date of birth"];
-    cell4.innerHTML = store_obj["gender"];
-    cell5.innerHTML = store_obj["city"];
-    cell6.innerHTML = store_obj["date"];
-    cell7.innerHTML = store_obj["time"];
-    cell8.innerHTML = store_obj["lab"];
-    cell9.innerHTML = store_obj["report"];
-    cell10.innerHTML = store_obj["result"];
-    cell11.innerHTML = store_obj["aadhar"];
-  }
-  removeSelectedRow();
-}
-myFunction() {
-  var input, i;
-  input = document.getElementById("find").value;
-  table = document.getElementById("table");
-  tr = table.getElementsByTagName("tr");
-  if (tr.length === 1) {
-    document.getElementById("msg").innerHTML =
-      "***There Is No Record Found!***";
-  } else {
-    for (i = 1; i < tr.length; i++) {
-      if (table.rows[i].cells[10].innerHTML === input) {
-        var newRow1 = table1.insertRow(table1.length),
-          cell1 = newRow1.insertCell(0),
-          cell2 = newRow1.insertCell(1),
-          cell3 = newRow1.insertCell(2),
-          cell4 = newRow1.insertCell(3),
-          cell5 = newRow1.insertCell(4),
-          cell6 = newRow1.insertCell(5),
-          cell7 = newRow1.insertCell(6),
-          cell8 = newRow1.insertCell(7),
-          cell9 = newRow1.insertCell(8),
-          cell10 = newRow1.insertCell(9),
-          cell11 = newRow1.insertCell(10);
-        cell1.innerHTML = table.rows[i].cells[0].innerHTML;
-        cell2.innerHTML = table.rows[i].cells[1].innerHTML;
-        cell3.innerHTML = table.rows[i].cells[2].innerHTML;
-        cell4.innerHTML = table.rows[i].cells[3].innerHTML;
-        cell5.innerHTML = table.rows[i].cells[4].innerHTML;
-        cell6.innerHTML = table.rows[i].cells[5].innerHTML;
-        cell7.innerHTML = table.rows[i].cells[6].innerHTML;
-        cell8.innerHTML = table.rows[i].cells[7].innerHTML;
-        cell9.innerHTML = table.rows[i].cells[8].innerHTML;
-        cell10.innerHTML = table.rows[i].cells[9].innerHTML;
-        cell11.innerHTML = table.rows[i].cells[10].innerHTML;
-      }
+  fg=new FormGroup({fname:new FormControl("",[Validators.required]),lname:new FormControl("",[Validators.required]),dob:new FormControl("",[Validators.required]),gender:new FormControl("",[Validators.required]),
+    city:new FormControl("",[Validators.required]),date:new FormControl("",[Validators.required]),time:new FormControl("",[Validators.required]),lab:new FormControl("",[Validators.required]),report:new FormControl("",[Validators.required])
+    ,result:new FormControl("",[Validators.required]),aadhar:new FormControl("",[Validators.required])});
+   store:any=[];
+   input: any;
+  headers=["First Name","Last Name","Date of Birth","Gender","City","Date Of Test","Time Of Test","Lab Name",
+  "Report Number","Result","Aadhar Number"];
+  title: any;
+  searchvalue:any=[];
+  add(){
+    if(this.fg.dirty===true){
+      console.log(this.store.push(this.fg.value));
+      console.log(this.store);
+      this.fg.reset();
+      (<HTMLDivElement>document.getElementById("msg")).style.display="none";
     }
+    // else{
+    //   alert("*************Please, must fill the empty fields in the form!!!**********");
+    // }
   }
-}
-checkEmptyInput() {
-  var isEmpty = false,
-    fname = document.getElementById("fname").value,
-    lname = document.getElementById("lname").value,
-    dob = document.getElementById("dob").value,
-    gender = document.getElementById("gender").value,
-    city = document.getElementById("city").value,
-    time = document.getElementById("time").value,
-    lab = document.getElementById("lab").value,
-    report = document.getElementById("report").value,
-    result = document.getElementById("result").value,
-    aadhar = document.getElementById("aadhar").value;
-  if (fname === "") {
-    alert("First Name Connot Be Empty");
-    isEmpty = true;
-  } else if (lname === "") {
-    alert("Last Name Connot Be Empty");
-    isEmpty = true;
-  } else if (dob === "") {
-    alert("date of birth Connot Be Empty");
-    isEmpty = true;
-  } else if (gender === "") {
-    alert("Gender Connot Be Empty");
-    isEmpty = true;
-  } else if (city === "") {
-    alert("City Connot Be Empty");
-    isEmpty = true;
-  } else if (time === "") {
-    alert("Time Connot Be Empty");
-    isEmpty = true;
-  } else if (lab === "") {
-    alert("Lab Connot Be Empty");
-    isEmpty = true;
-  } else if (report === "") {
-    alert("Report Connot Be Empty");
-    isEmpty = true;
-  } else if (result === "") {
-    alert("Result Connot Be Empty");
-    isEmpty = true;
-  } else if (aadhar === "") {
-    alert("Aadhar Connot Be Empty");
-    isEmpty = true;
+  search(){
+    console.log((<HTMLDivElement>document.getElementById("find")).innerHTML);
+    if((<HTMLDivElement>document.getElementById("find")).innerText==""){
+      (<HTMLDivElement>document.getElementById("msg")).innerText="***********THERE IS NO RECORD FOUND AND FIELD WAS EMPTY!!!*********";
+    }
+    this.input=(<HTMLInputElement>document.getElementById("find")).value;
+    this.store.forEach((element:any) => {
+      if(element.aadhar==this.input){
+        this.searchvalue.push(element);
+      }
+    });
+    (<HTMLInputElement>document.getElementById("find")).value="";
+  }  
+  removefield(){
+    (<HTMLTableRowElement>document.getElementById('tr')).style.display="none";
   }
-  return isEmpty;
-}
-reset() {
-  var table, tr;
-  table = document.getElementById("table1");
-  tr = table.getElementsByTagName("tr");
-  for (i = 1; i < tr.length; i++) {
-    tr[i].style.display = "none";
-  }
-}
-removeSelectedRow() {
-  document.getElementById("fname").value = "";
-  document.getElementById("lname").value = "";
-  document.getElementById("dob").value = "";
-  document.getElementById("gender").value = "";
-  document.getElementById("city").value = "";
-  document.getElementById("date").value = "";
-  document.getElementById("time").value = "";
-  document.getElementById("lab").value = "";
-  document.getElementById("report").value = "";
-  document.getElementById("result").value = "";
-  document.getElementById("aadhar").value = "";
-}
-
 }

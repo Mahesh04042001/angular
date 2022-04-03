@@ -46,6 +46,13 @@ label {
   color: black;
   margin: 30px;
 }
+#table tr td,
+#table1 tr td,h2{
+  color: white;
+}
+h2{
+  margin-bottom: 20px;
+}
 .tab-container {
   background-color: white;
   border-radius: 10px;
@@ -95,4 +102,8 @@ input {
 }
 h1 {
   color: white;
+}
+#msg{
+  color: red;
+  margin-top: 30px;
 }

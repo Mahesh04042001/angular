@@ -1,4 +1,4 @@
-export function myFunction() {
+export function search() {
   var input, i, table, tr, table1;
   input = document.getElementById("find").value;
   table = document.getElementById("table");
@@ -35,4 +35,5 @@ export function myFunction() {
       }
     }
   }
+  document.getElementById("find").value = "";
 }
