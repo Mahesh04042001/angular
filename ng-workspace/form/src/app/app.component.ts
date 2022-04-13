@@ -17,7 +17,7 @@ export class AppComponent {
   title: any;
   searchvalue:any=[];
   add(){
-    if(this.fg.dirty===true){
+    if(this.fg.dirty==true){
       console.log(this.store.push(this.fg.value));
       console.log(this.store);
       this.fg.reset();
