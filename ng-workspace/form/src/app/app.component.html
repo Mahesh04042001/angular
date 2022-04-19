@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <h1>RT-PCR REGISTRATION FORM</h1>
   <form class="tab tab-container" [formGroup]="fg">
     <div class="field">
@@ -189,4 +189,18 @@
       </tr>
     </table>
   </div>
+</div> -->
+<div>
+  <p>Hello guys! {{name}}</p>
 </div>
+<input type="text" [(ngModel)]="name">
+<button (click)="showOrHide()">Show/Hide</button>
+<app-parent [name]="name" *ngIf="value">
+  hello how are you? poovarasan
+  <div>
+    <p>Hello guys! {{name}}</p>
+  </div>
+</app-parent>
+<router-outlet></router-outlet>
+<a routerLink="parent" routerLinkActive="text-danger"> parent </a>
+<a routerLink="child" routerLinkActive="text-danger"> child </a>

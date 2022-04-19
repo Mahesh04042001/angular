@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core';
+import { BooksdaoService } from '../booksdao.service';
 @Component({
   selector: 'app-book',
   templateUrl: './book.component.html',
