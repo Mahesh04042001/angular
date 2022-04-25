@@ -6,12 +6,14 @@ import {  FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { FormRoutingModule } from './form-routing.module';
+import { TestPipe } from './test.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    TestPipe
   ],
   imports: [
     BrowserModule,

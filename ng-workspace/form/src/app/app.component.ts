@@ -1,5 +1,6 @@
 import { Component,AfterContentInit } from '@angular/core';
 import { FormControl, FormGroup, Validators} from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +9,15 @@ import { FormControl, FormGroup, Validators} from '@angular/forms';
 })
 export class AppComponent {
 value:boolean=false;
-name:string="Angular";
+a:number=3;
+b:number=5;
+
+name:any="";
 showOrHide(){
 this.value=!this.value;
 }
+constructor(private router:Router){}
+
 
   // fg=new FormGroup({fname:new FormControl("",[Validators.required]),lname:new FormControl("",[Validators.required]),dob:new FormControl("",[Validators.required]),gender:new FormControl("",[Validators.required]),
   //   city:new FormControl("",[Validators.required]),date:new FormControl("",[Validators.required]),time:new FormControl("",[Validators.required]),lab:new FormControl("",[Validators.required]),report:new FormControl("",[Validators.required])
@@ -46,4 +52,8 @@ this.value=!this.value;
   // removefield(){
   //   this.searchvalue=[];
   // }
+  nav(){
+this.router.navigate(['parent']);
+this.router.navigateByUrl('parent/'+this.name);
+  }
 }

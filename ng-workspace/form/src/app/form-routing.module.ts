@@ -4,9 +4,9 @@ import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
 
 const routes: Routes = [
-    {path:'parent',component:ParentComponent},
+    {path:'parent/:name',component:ParentComponent},
   {path:'child',component:ChildComponent},
-  {path:'child/:id/:name',component:ChildComponent},
+  {path:'child',component:ChildComponent},
 
 ];
 

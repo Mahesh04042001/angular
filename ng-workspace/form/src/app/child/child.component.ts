@@ -22,12 +22,12 @@ child:string="this is test";
 
     };
   }
-  // ngOnDestroy(): void {
-  //   console.log("child ondestroy called");
-  // }
-  // ngOnChanges() {
-  //   console.log("child onchange called");
-  // }
+  ngOnDestroy(): void {
+    console.log("child ondestroy called");
+  }
+  ngOnChanges() {
+    console.log("child onchange called");
+  }
   ngDoCheck(): void {
     console.log('child Do check is called');
   }
@@ -40,14 +40,14 @@ child:string="this is test";
   ngAfterContentInit(): void {
     console.log("child after content init called");
   }
-  // ngAfterContentChecked(): void {
-  //   console.log("child After content checked is called");
-  // }
-  ngOnDestroy(): void {
-    console.log("child NgOnDestroy called");
-    this.name="";
-    console.log(this.name);
+  ngAfterContentChecked(): void {
+    console.log("child After content checked is called");
   }
+  // ngOnDestroy(): void {
+  //   console.log("child NgOnDestroy called");
+  //   this.name="";
+  //   console.log(this.name);
+  // }
   // show(){
   //   this.val=!this.val;
   // }

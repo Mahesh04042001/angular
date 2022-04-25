@@ -202,5 +202,11 @@
   </div>
 </app-parent>
 <router-outlet></router-outlet>
-<a routerLink="parent" routerLinkActive="text-danger"> parent </a>
+<button><a (click)="nav()"> parent </a></button>
+{{name}}
+<!-- <a routerLink="parent" routerLinkActive="text-danger"> parent </a> -->
 <a routerLink="child" routerLinkActive="text-danger"> child </a>
+<p>a:{{a | currency:'PHP':'symbol'}}</p>
+<p>a:{{a | test}}</p>
+<!-- <input type="text" ngModel #ref>{{ref.value}} -->
+<input type="text" ngModel #hari>{{hari.value}}
