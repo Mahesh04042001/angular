@@ -279,17 +279,6 @@ section {
   height: 1rem;
   width: 1rem;
 }
-/* .down-arrow {
-  background-image: url(../images/icon-arrow.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer;
-  display: none;
-  height: 1rem;
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-  width: 1rem;
-} */
 hr {
   margin-bottom: 10px;
   margin-top: 10px;
