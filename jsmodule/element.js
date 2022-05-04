@@ -1,19 +1,17 @@
 import { setcurrencies } from "./currencyoption.js";
 import { calculate } from "./currencyconversion.js";
 
-
-function setmoney()
-{
-    setcurrencies();
+function setmoney() {
+  setcurrencies();
 }
 setmoney();
 
-
-var listen = document.getElementById('inputvalue');
+var listen = document.getElementById("inputvalue");
 console.log(listen);
-listen.addEventListener("change",function(){
-    calculate();
-})
+listen.addEventListener("change", function () {
+  calculate();
+});
+console.log(listen);
 // var dropdown = document.getElementById('money');
 // dropdown.addEventListener("mouseover",function(){
 //     var droplength = document.getElementById('money').options.length;

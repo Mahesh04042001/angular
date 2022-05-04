@@ -5,39 +5,39 @@ var input4 = document.getElementById("arrow4");
 
 function myFunction(input) {
   if (input === "arrow1") {
-    var x = document.getElementById("ans1");
-    if (x.style.display === "none") {
-      x.style.display = "block";
+    var show = document.getElementById("ans1");
+    if (show.style.display === "none") {
+      show.style.display = "block";
       input1.style.transform = "rotate(180deg)";
     } else {
-      x.style.display = "none";
+      show.style.display = "none";
       input1.style.transform = "rotate(360deg)";
     }
   } else if (input === "arrow2") {
-    var x = document.getElementById("ans2");
-    if (x.style.display === "none") {
-      x.style.display = "block";
+    var show = document.getElementById("ans2");
+    if (show.style.display === "none") {
+      show.style.display = "block";
       input2.style.transform = "rotate(180deg)";
     } else {
-      x.style.display = "none";
+      show.style.display = "none";
       input2.style.transform = "rotate(360deg)";
     }
   } else if (input === "arrow3") {
-    var x = document.getElementById("ans3");
-    if (x.style.display === "none") {
-      x.style.display = "block";
+    var show = document.getElementById("ans3");
+    if (show.style.display === "none") {
+      show.style.display = "block";
       input3.style.transform = "rotate(180deg)";
     } else {
-      x.style.display = "none";
+      show.style.display = "none";
       input3.style.transform = "rotate(360deg)";
     }
   } else if (input === "arrow4") {
-    var x = document.getElementById("ans4");
-    if (x.style.display === "none") {
-      x.style.display = "block";
+    var show = document.getElementById("ans4");
+    if (show.style.display === "none") {
+      show.style.display = "block";
       input4.style.transform = "rotate(180deg)";
     } else {
-      x.style.display = "none";
+      show.style.display = "none";
       input4.style.transform = "rotate(360deg)";
     }
   }
